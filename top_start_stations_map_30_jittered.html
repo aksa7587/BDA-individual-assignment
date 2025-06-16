@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_297790d2fc71774a6b2902e71f1f186a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_297790d2fc71774a6b2902e71f1f186a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_297790d2fc71774a6b2902e71f1f186a = L.map(
+                "map_297790d2fc71774a6b2902e71f1f186a",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_297790d2fc71774a6b2902e71f1f186a);
+
+            
+
+        
+    
+            var tile_layer_78e0832b665698e9fa774f4854e3de97 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_78e0832b665698e9fa774f4854e3de97.addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+            var circle_marker_45ffb29f8be6044d67817a8313915aea = L.circleMarker(
+                [41.89225268344747, -87.61218869903968],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.668, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_dd71b438afc6bf9a8b86468cb2ffff2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e69475c0c483eb9c59e2167b52c2bb7 = $(`<div id="html_4e69475c0c483eb9c59e2167b52c2bb7" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Autumn<br>Trips: 19668</div>`)[0];
+                popup_dd71b438afc6bf9a8b86468cb2ffff2d.setContent(html_4e69475c0c483eb9c59e2167b52c2bb7);
+            
+        
+
+        circle_marker_45ffb29f8be6044d67817a8313915aea.bindPopup(popup_dd71b438afc6bf9a8b86468cb2ffff2d)
+        ;
+
+        
+    
+    
+            var circle_marker_bc882d2f7da230ed53c68b2d7dfc6dda = L.circleMarker(
+                [41.91220217535393, -87.63455734291425],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.875, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_b39bfa969fb80cdcbbdf415b12ea5556 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0e4a1afdb567e96627a0a6d188ad888 = $(`<div id="html_c0e4a1afdb567e96627a0a6d188ad888" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Autumn<br>Trips: 12875</div>`)[0];
+                popup_b39bfa969fb80cdcbbdf415b12ea5556.setContent(html_c0e4a1afdb567e96627a0a6d188ad888);
+            
+        
+
+        circle_marker_bc882d2f7da230ed53c68b2d7dfc6dda.bindPopup(popup_b39bfa969fb80cdcbbdf415b12ea5556)
+        ;
+
+        
+    
+    
+            var circle_marker_8ec546455f81c30865b29e6c98effdf5 = L.circleMarker(
+                [41.90312610985075, -87.6311779331826],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.033, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_7e594543c55ce838cf4561ebe31113d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3133f4edc0b1335225f83807d8026e63 = $(`<div id="html_3133f4edc0b1335225f83807d8026e63" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Autumn<br>Trips: 12033</div>`)[0];
+                popup_7e594543c55ce838cf4561ebe31113d7.setContent(html_3133f4edc0b1335225f83807d8026e63);
+            
+        
+
+        circle_marker_8ec546455f81c30865b29e6c98effdf5.bindPopup(popup_7e594543c55ce838cf4561ebe31113d7)
+        ;
+
+        
+    
+    
+            var circle_marker_5a635428a41eeef94175d43a1b1cea4a = L.circleMarker(
+                [41.88102232313067, -87.6240097636361],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.018, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_9fec048b3073e72518c5022da9622c28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21b73832f4cc037a9fb9bf8562eb4aff = $(`<div id="html_21b73832f4cc037a9fb9bf8562eb4aff" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Autumn<br>Trips: 11018</div>`)[0];
+                popup_9fec048b3073e72518c5022da9622c28.setContent(html_21b73832f4cc037a9fb9bf8562eb4aff);
+            
+        
+
+        circle_marker_5a635428a41eeef94175d43a1b1cea4a.bindPopup(popup_9fec048b3073e72518c5022da9622c28)
+        ;
+
+        
+    
+    
+            var circle_marker_24187fbfdc04440d8e59b57210517a00 = L.circleMarker(
+                [41.90303081289887, -87.63423326013734],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.991, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e00890f3ae6b13e3b76419e7c7b42a42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1091b7484cc69722b38db88b0f250627 = $(`<div id="html_1091b7484cc69722b38db88b0f250627" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Autumn<br>Trips: 10991</div>`)[0];
+                popup_e00890f3ae6b13e3b76419e7c7b42a42.setContent(html_1091b7484cc69722b38db88b0f250627);
+            
+        
+
+        circle_marker_24187fbfdc04440d8e59b57210517a00.bindPopup(popup_e00890f3ae6b13e3b76419e7c7b42a42)
+        ;
+
+        
+    
+    
+            var circle_marker_d009429ddd812421c453f1e5302d1c8d = L.circleMarker(
+                [41.90086989702942, -87.62383916565058],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.630000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_36a8578edc7bc7cfa4ce7f14bcd0914e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d49ae81e32e11fa9b31bd9fef59adfa = $(`<div id="html_3d49ae81e32e11fa9b31bd9fef59adfa" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Autumn<br>Trips: 10630</div>`)[0];
+                popup_36a8578edc7bc7cfa4ce7f14bcd0914e.setContent(html_3d49ae81e32e11fa9b31bd9fef59adfa);
+            
+        
+
+        circle_marker_d009429ddd812421c453f1e5302d1c8d.bindPopup(popup_36a8578edc7bc7cfa4ce7f14bcd0914e)
+        ;
+
+        
+    
+    
+            var circle_marker_e3bc063cf7fdc08897d60a4345c6ff68 = L.circleMarker(
+                [41.911653910363334, -87.62679561789483],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.525, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_cfa012ce0825947e4b2371b4bbe0fba2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50fccfef1cf0dbd13ac94921c5bc627c = $(`<div id="html_50fccfef1cf0dbd13ac94921c5bc627c" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & North Blvd</b><br>Season: Autumn<br>Trips: 10525</div>`)[0];
+                popup_cfa012ce0825947e4b2371b4bbe0fba2.setContent(html_50fccfef1cf0dbd13ac94921c5bc627c);
+            
+        
+
+        circle_marker_e3bc063cf7fdc08897d60a4345c6ff68.bindPopup(popup_cfa012ce0825947e4b2371b4bbe0fba2)
+        ;
+
+        
+    
+    
+            var circle_marker_89e932b0525a5b8a14bbc2984c8454a8 = L.circleMarker(
+                [41.889242218141646, -87.63842129226778],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.503999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_350a6fef6d5a70b0fac3e932319697be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd8479992343805a829c898e184948d0 = $(`<div id="html_cd8479992343805a829c898e184948d0" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Autumn<br>Trips: 10504</div>`)[0];
+                popup_350a6fef6d5a70b0fac3e932319697be.setContent(html_cd8479992343805a829c898e184948d0);
+            
+        
+
+        circle_marker_89e932b0525a5b8a14bbc2984c8454a8.bindPopup(popup_350a6fef6d5a70b0fac3e932319697be)
+        ;
+
+        
+    
+    
+            var circle_marker_3eaf5fa3d168aa1aef0fa2d0dd5be523 = L.circleMarker(
+                [41.88096487295027, -87.61687893830818],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.378, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3c55887bb8799f082e3a93b23cf6a366 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4227a60e1fc9d633c8974fb850bc1a79 = $(`<div id="html_4227a60e1fc9d633c8974fb850bc1a79" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Monroe St</b><br>Season: Autumn<br>Trips: 10378</div>`)[0];
+                popup_3c55887bb8799f082e3a93b23cf6a366.setContent(html_4227a60e1fc9d633c8974fb850bc1a79);
+            
+        
+
+        circle_marker_3eaf5fa3d168aa1aef0fa2d0dd5be523.bindPopup(popup_3c55887bb8799f082e3a93b23cf6a366)
+        ;
+
+        
+    
+    
+            var circle_marker_d1df70a1676844050c4ebf725fb9a512 = L.circleMarker(
+                [41.78517027723921, -87.60112451812934],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.281, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_32278d6dda4fc3af51b1ac9c3836b36b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0d420612f3ca7426f8d85a771056e76 = $(`<div id="html_d0d420612f3ca7426f8d85a771056e76" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>Season: Autumn<br>Trips: 10281</div>`)[0];
+                popup_32278d6dda4fc3af51b1ac9c3836b36b.setContent(html_d0d420612f3ca7426f8d85a771056e76);
+            
+        
+
+        circle_marker_d1df70a1676844050c4ebf725fb9a512.bindPopup(popup_32278d6dda4fc3af51b1ac9c3836b36b)
+        ;
+
+        
+    
+    
+            var circle_marker_1b57ea3570ca4f1bf805a0790209cb8f = L.circleMarker(
+                [41.894624329269064, -87.63424399213636],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.483, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_083de9a85c38aeed87f9f31958e10a0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3054d4bc98e4a4a62176eb339991a5b = $(`<div id="html_b3054d4bc98e4a4a62176eb339991a5b" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Autumn<br>Trips: 9483</div>`)[0];
+                popup_083de9a85c38aeed87f9f31958e10a0f.setContent(html_b3054d4bc98e4a4a62176eb339991a5b);
+            
+        
+
+        circle_marker_1b57ea3570ca4f1bf805a0790209cb8f.bindPopup(popup_083de9a85c38aeed87f9f31958e10a0f)
+        ;
+
+        
+    
+    
+            var circle_marker_2d142552201a76ca48341f89ddbffba8 = L.circleMarker(
+                [41.91843087669263, -87.63622500890372],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.395, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f9b85635e45621a54de1dc505c9cd32c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_829c7606538bc373ae251b7e5d04cffa = $(`<div id="html_829c7606538bc373ae251b7e5d04cffa" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Autumn<br>Trips: 9395</div>`)[0];
+                popup_f9b85635e45621a54de1dc505c9cd32c.setContent(html_829c7606538bc373ae251b7e5d04cffa);
+            
+        
+
+        circle_marker_2d142552201a76ca48341f89ddbffba8.bindPopup(popup_f9b85635e45621a54de1dc505c9cd32c)
+        ;
+
+        
+    
+    
+            var circle_marker_2378d27b50ac9f09766562be6076a476 = L.circleMarker(
+                [41.89385510026621, -87.62912650176271],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.177, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c2749d175db03ed876ed92238ec75a1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d90c017b4691ad9682417b524b05ddc = $(`<div id="html_6d90c017b4691ad9682417b524b05ddc" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Autumn<br>Trips: 9177</div>`)[0];
+                popup_c2749d175db03ed876ed92238ec75a1e.setContent(html_6d90c017b4691ad9682417b524b05ddc);
+            
+        
+
+        circle_marker_2378d27b50ac9f09766562be6076a476.bindPopup(popup_c2749d175db03ed876ed92238ec75a1e)
+        ;
+
+        
+    
+    
+            var circle_marker_7c101039f35b4ad2b6b1fcbf8bf852aa = L.circleMarker(
+                [41.937442073981934, -87.64413219386752],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.159, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f53c45f07607ec83b39d9b0e72971868 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_318f59b5de9f6c60d2ef9cf23342053d = $(`<div id="html_318f59b5de9f6c60d2ef9cf23342053d" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Autumn<br>Trips: 9159</div>`)[0];
+                popup_f53c45f07607ec83b39d9b0e72971868.setContent(html_318f59b5de9f6c60d2ef9cf23342053d);
+            
+        
+
+        circle_marker_7c101039f35b4ad2b6b1fcbf8bf852aa.bindPopup(popup_f53c45f07607ec83b39d9b0e72971868)
+        ;
+
+        
+    
+    
+            var circle_marker_2f9d95e69d50a8669111b2fb8ef13cdd = L.circleMarker(
+                [41.89135709611247, -87.62692270546157],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.121, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_b60ea689e4fa6ffba5749a56f6d7de02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_012cf241fae2467e038274dd24f8666c = $(`<div id="html_012cf241fae2467e038274dd24f8666c" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Autumn<br>Trips: 9121</div>`)[0];
+                popup_b60ea689e4fa6ffba5749a56f6d7de02.setContent(html_012cf241fae2467e038274dd24f8666c);
+            
+        
+
+        circle_marker_2f9d95e69d50a8669111b2fb8ef13cdd.bindPopup(popup_b60ea689e4fa6ffba5749a56f6d7de02)
+        ;
+
+        
+    
+    
+            var circle_marker_b9a670a0ece86a9cbc18089c22d44f5d = L.circleMarker(
+                [41.894162676755684, -87.62265221722427],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.12, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_95fcae9a3ae5a8d4def8cecee1626fa4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_871be900f0df803fcdbdcb0a4867a64f = $(`<div id="html_871be900f0df803fcdbdcb0a4867a64f" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Autumn<br>Trips: 9120</div>`)[0];
+                popup_95fcae9a3ae5a8d4def8cecee1626fa4.setContent(html_871be900f0df803fcdbdcb0a4867a64f);
+            
+        
+
+        circle_marker_b9a670a0ece86a9cbc18089c22d44f5d.bindPopup(popup_95fcae9a3ae5a8d4def8cecee1626fa4)
+        ;
+
+        
+    
+    
+            var circle_marker_16b649b8d37d8bd7cc4bef0a6f0e6614 = L.circleMarker(
+                [41.79166474018981, -87.59984441275762],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.07, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3d552f8f87bac36f8100a3e6e8c1ad22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d44d4568166b1be6138f90252494c23 = $(`<div id="html_7d44d4568166b1be6138f90252494c23" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>Season: Autumn<br>Trips: 9070</div>`)[0];
+                popup_3d552f8f87bac36f8100a3e6e8c1ad22.setContent(html_7d44d4568166b1be6138f90252494c23);
+            
+        
+
+        circle_marker_16b649b8d37d8bd7cc4bef0a6f0e6614.bindPopup(popup_3d552f8f87bac36f8100a3e6e8c1ad22)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca98d05a7395dfddd6069a0ae0e11cc = L.circleMarker(
+                [41.91583625342799, -87.63451862770847],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.027, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_b6da1150fb23114789c33107492df113 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5db34528feed4889d1f491bce49cc123 = $(`<div id="html_5db34528feed4889d1f491bce49cc123" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Autumn<br>Trips: 9027</div>`)[0];
+                popup_b6da1150fb23114789c33107492df113.setContent(html_5db34528feed4889d1f491bce49cc123);
+            
+        
+
+        circle_marker_4ca98d05a7395dfddd6069a0ae0e11cc.bindPopup(popup_b6da1150fb23114789c33107492df113)
+        ;
+
+        
+    
+    
+            var circle_marker_83a99a8b7198b7234c0ce6bc5c795911 = L.circleMarker(
+                [41.939998649768, -87.65295552580656],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.759, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4e3f75474e1dc361f927f08c14fe265f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbb2cbb78c419bef2bce9269bfa5c273 = $(`<div id="html_cbb2cbb78c419bef2bce9269bfa5c273" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Season: Autumn<br>Trips: 8759</div>`)[0];
+                popup_4e3f75474e1dc361f927f08c14fe265f.setContent(html_cbb2cbb78c419bef2bce9269bfa5c273);
+            
+        
+
+        circle_marker_83a99a8b7198b7234c0ce6bc5c795911.bindPopup(popup_4e3f75474e1dc361f927f08c14fe265f)
+        ;
+
+        
+    
+    
+            var circle_marker_e70060535ebf7fd7d61403241acbc6fb = L.circleMarker(
+                [41.881729293989636, -87.64889797291725],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.592, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c87380436cb620566308674bf28d51f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d7bdf4ff8df719d9628791ede205afc = $(`<div id="html_6d7bdf4ff8df719d9628791ede205afc" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Autumn<br>Trips: 8592</div>`)[0];
+                popup_c87380436cb620566308674bf28d51f0.setContent(html_6d7bdf4ff8df719d9628791ede205afc);
+            
+        
+
+        circle_marker_e70060535ebf7fd7d61403241acbc6fb.bindPopup(popup_c87380436cb620566308674bf28d51f0)
+        ;
+
+        
+    
+    
+            var circle_marker_bba1cd7f1d0c9c44d37b9e599d2f40db = L.circleMarker(
+                [41.88201085538029, -87.6412576708699],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.382, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_263633e8f803aaf7fdde6e6fabba69a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34a57c81aac853b3f4435bf1dd80f72e = $(`<div id="html_34a57c81aac853b3f4435bf1dd80f72e" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>Season: Autumn<br>Trips: 8382</div>`)[0];
+                popup_263633e8f803aaf7fdde6e6fabba69a6.setContent(html_34a57c81aac853b3f4435bf1dd80f72e);
+            
+        
+
+        circle_marker_bba1cd7f1d0c9c44d37b9e599d2f40db.bindPopup(popup_263633e8f803aaf7fdde6e6fabba69a6)
+        ;
+
+        
+    
+    
+            var circle_marker_963665b1f174b2975283a7049178fdd1 = L.circleMarker(
+                [41.92624974155771, -87.63089495783726],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.178, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_aa31dc6625a930ab273730edcafd84e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3adc5fa13189bbb61254b664ab79d35a = $(`<div id="html_3adc5fa13189bbb61254b664ab79d35a" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Autumn<br>Trips: 8178</div>`)[0];
+                popup_aa31dc6625a930ab273730edcafd84e1.setContent(html_3adc5fa13189bbb61254b664ab79d35a);
+            
+        
+
+        circle_marker_963665b1f174b2975283a7049178fdd1.bindPopup(popup_aa31dc6625a930ab273730edcafd84e1)
+        ;
+
+        
+    
+    
+            var circle_marker_0875c0515b21c121a8d05cd2eb3bb14e = L.circleMarker(
+                [41.903566557535534, -87.6677400456372],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.123, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_771e2f074154285646a7e74787600aad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae5c82feaf803a11ca693379ea805a68 = $(`<div id="html_ae5c82feaf803a11ca693379ea805a68" style="width: 100.0%; height: 100.0%;"><b>Ashland Ave & Division St</b><br>Season: Autumn<br>Trips: 8123</div>`)[0];
+                popup_771e2f074154285646a7e74787600aad.setContent(html_ae5c82feaf803a11ca693379ea805a68);
+            
+        
+
+        circle_marker_0875c0515b21c121a8d05cd2eb3bb14e.bindPopup(popup_771e2f074154285646a7e74787600aad)
+        ;
+
+        
+    
+    
+            var circle_marker_c5d0d0a41a307ddb6499047d3ed945b4 = L.circleMarker(
+                [41.890981683069306, -87.61859836278146],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.025, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c615dbfe24492503aaa20b339d2aed30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd0ab862115f3599647916cd00034046 = $(`<div id="html_cd0ab862115f3599647916cd00034046" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Autumn<br>Trips: 8025</div>`)[0];
+                popup_c615dbfe24492503aaa20b339d2aed30.setContent(html_cd0ab862115f3599647916cd00034046);
+            
+        
+
+        circle_marker_c5d0d0a41a307ddb6499047d3ed945b4.bindPopup(popup_c615dbfe24492503aaa20b339d2aed30)
+        ;
+
+        
+    
+    
+            var circle_marker_fe13c5ef402e9702c4ec3e771ef7b698 = L.circleMarker(
+                [41.929405928106135, -87.64295649360326],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.983, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_1ee22535152d0efbf84f1e79bf0017d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d4f9105356973305f696560c315e158 = $(`<div id="html_7d4f9105356973305f696560c315e158" style="width: 100.0%; height: 100.0%;"><b>Clark St & Wrightwood Ave</b><br>Season: Autumn<br>Trips: 7983</div>`)[0];
+                popup_1ee22535152d0efbf84f1e79bf0017d6.setContent(html_7d4f9105356973305f696560c315e158);
+            
+        
+
+        circle_marker_fe13c5ef402e9702c4ec3e771ef7b698.bindPopup(popup_1ee22535152d0efbf84f1e79bf0017d6)
+        ;
+
+        
+    
+    
+            var circle_marker_aeabd416e203f2693e338ace4f4bbb0e = L.circleMarker(
+                [41.921792877224284, -87.64392028226509],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.904, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f2a47fa86aa8dab0e977fe27ee9bbd04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9ba69fb016ad524e98b497418f7a697 = $(`<div id="html_d9ba69fb016ad524e98b497418f7a697" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Autumn<br>Trips: 7904</div>`)[0];
+                popup_f2a47fa86aa8dab0e977fe27ee9bbd04.setContent(html_d9ba69fb016ad524e98b497418f7a697);
+            
+        
+
+        circle_marker_aeabd416e203f2693e338ace4f4bbb0e.bindPopup(popup_f2a47fa86aa8dab0e977fe27ee9bbd04)
+        ;
+
+        
+    
+    
+            var circle_marker_da17f1995b76da1d11e367db64900d12 = L.circleMarker(
+                [41.88869992249974, -87.64429442336873],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.826, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c05b42e0b0209c2dd74e441917958e01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c2d477bce7bc3094689ae94184344ed = $(`<div id="html_7c2d477bce7bc3094689ae94184344ed" style="width: 100.0%; height: 100.0%;"><b>Desplaines St & Kinzie St</b><br>Season: Autumn<br>Trips: 7826</div>`)[0];
+                popup_c05b42e0b0209c2dd74e441917958e01.setContent(html_7c2d477bce7bc3094689ae94184344ed);
+            
+        
+
+        circle_marker_da17f1995b76da1d11e367db64900d12.bindPopup(popup_c05b42e0b0209c2dd74e441917958e01)
+        ;
+
+        
+    
+    
+            var circle_marker_4a7f717d77ff73aab125e73c296b1615 = L.circleMarker(
+                [41.90683837578206, -87.63502324261],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.763, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_1b8493a0f4d2244a6db8e5689b9c92a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bacfdf8133e7b3e7cd8ed49e22bce5b = $(`<div id="html_8bacfdf8133e7b3e7cd8ed49e22bce5b" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Autumn<br>Trips: 7763</div>`)[0];
+                popup_1b8493a0f4d2244a6db8e5689b9c92a6.setContent(html_8bacfdf8133e7b3e7cd8ed49e22bce5b);
+            
+        
+
+        circle_marker_4a7f717d77ff73aab125e73c296b1615.bindPopup(popup_1b8493a0f4d2244a6db8e5689b9c92a6)
+        ;
+
+        
+    
+    
+            var circle_marker_0c92988c235098b5adb3df227bc6176d = L.circleMarker(
+                [41.925700261729325, -87.6537790971518],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.762, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3e8519b8464ac397e9147e60fa0da099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_817cf5fd8175775ed19919bcb02e8916 = $(`<div id="html_817cf5fd8175775ed19919bcb02e8916" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Fullerton Ave</b><br>Season: Autumn<br>Trips: 7762</div>`)[0];
+                popup_3e8519b8464ac397e9147e60fa0da099.setContent(html_817cf5fd8175775ed19919bcb02e8916);
+            
+        
+
+        circle_marker_0c92988c235098b5adb3df227bc6176d.bindPopup(popup_3e8519b8464ac397e9147e60fa0da099)
+        ;
+
+        
+    
+    
+            var circle_marker_ff0fe3b7f49392c9a7a9130232cfc45e = L.circleMarker(
+                [41.8909160977981, -87.63187426639179],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.664, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_42edb25d1954bbb8e3d5f4362ffd9182 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bba772a381ac0bf497bbe3e8143e4d1 = $(`<div id="html_4bba772a381ac0bf497bbe3e8143e4d1" style="width: 100.0%; height: 100.0%;"><b>LaSalle St & Illinois St</b><br>Season: Autumn<br>Trips: 7664</div>`)[0];
+                popup_42edb25d1954bbb8e3d5f4362ffd9182.setContent(html_4bba772a381ac0bf497bbe3e8143e4d1);
+            
+        
+
+        circle_marker_ff0fe3b7f49392c9a7a9130232cfc45e.bindPopup(popup_42edb25d1954bbb8e3d5f4362ffd9182)
+        ;
+
+        
+    
+    
+            var circle_marker_1557b12ff19a1a1ebe3b6e0cc55dbb89 = L.circleMarker(
+                [41.89239957782774, -87.61219405839395],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.654, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3827f65cf84f44a379a3ec563e4ac852 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4628e4f8e5246f3a1b292b3787866a8d = $(`<div id="html_4628e4f8e5246f3a1b292b3787866a8d" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Spring<br>Trips: 15654</div>`)[0];
+                popup_3827f65cf84f44a379a3ec563e4ac852.setContent(html_4628e4f8e5246f3a1b292b3787866a8d);
+            
+        
+
+        circle_marker_1557b12ff19a1a1ebe3b6e0cc55dbb89.bindPopup(popup_3827f65cf84f44a379a3ec563e4ac852)
+        ;
+
+        
+    
+    
+            var circle_marker_af311bede98d1b4ae8ad5fe474873b7c = L.circleMarker(
+                [41.88079136053318, -87.61672419826891],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.267, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_7f290d5eb115f73e8cd4ae5e825b5693 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97c2cb392f9eef785460ddcaa26bfdc2 = $(`<div id="html_97c2cb392f9eef785460ddcaa26bfdc2" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & Monroe St</b><br>Season: Spring<br>Trips: 12267</div>`)[0];
+                popup_7f290d5eb115f73e8cd4ae5e825b5693.setContent(html_97c2cb392f9eef785460ddcaa26bfdc2);
+            
+        
+
+        circle_marker_af311bede98d1b4ae8ad5fe474873b7c.bindPopup(popup_7f290d5eb115f73e8cd4ae5e825b5693)
+        ;
+
+        
+    
+    
+            var circle_marker_b13b5238ca9c3e9ffb9968fd9f8b701f = L.circleMarker(
+                [41.880973977603055, -87.62391081560202],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.29, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_818e8875869631e3aa021a54adbe313e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc9eee4d5a6579cad5d713eebb445e35 = $(`<div id="html_cc9eee4d5a6579cad5d713eebb445e35" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Spring<br>Trips: 9290</div>`)[0];
+                popup_818e8875869631e3aa021a54adbe313e.setContent(html_cc9eee4d5a6579cad5d713eebb445e35);
+            
+        
+
+        circle_marker_b13b5238ca9c3e9ffb9968fd9f8b701f.bindPopup(popup_818e8875869631e3aa021a54adbe313e)
+        ;
+
+        
+    
+    
+            var circle_marker_fb76504d644fd9403abbd9a62e6785d3 = L.circleMarker(
+                [41.900910690826464, -87.62370580808306],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.898, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3c9bc0291e14ba33538b91e3104b758d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba2a5130ff89345d087747fc7802947f = $(`<div id="html_ba2a5130ff89345d087747fc7802947f" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Spring<br>Trips: 8898</div>`)[0];
+                popup_3c9bc0291e14ba33538b91e3104b758d.setContent(html_ba2a5130ff89345d087747fc7802947f);
+            
+        
+
+        circle_marker_fb76504d644fd9403abbd9a62e6785d3.bindPopup(popup_3c9bc0291e14ba33538b91e3104b758d)
+        ;
+
+        
+    
+    
+            var circle_marker_48042012f4445f786e43b41668de264e = L.circleMarker(
+                [41.90281948032633, -87.6314367372691],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.399, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_28f0d810d2ad5a268a1635e05ea85762 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51e2d4583a4cf0ed41171f6511d5f897 = $(`<div id="html_51e2d4583a4cf0ed41171f6511d5f897" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Spring<br>Trips: 8399</div>`)[0];
+                popup_28f0d810d2ad5a268a1635e05ea85762.setContent(html_51e2d4583a4cf0ed41171f6511d5f897);
+            
+        
+
+        circle_marker_48042012f4445f786e43b41668de264e.bindPopup(popup_28f0d810d2ad5a268a1635e05ea85762)
+        ;
+
+        
+    
+    
+            var circle_marker_805463683a0d9edc59c37654a8cc26d0 = L.circleMarker(
+                [41.91224751578278, -87.6348053364956],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.293, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_82c0a56dd81cdf7a2153dc66de8ab472 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a142666c13cad60de645a966873a7179 = $(`<div id="html_a142666c13cad60de645a966873a7179" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Spring<br>Trips: 8293</div>`)[0];
+                popup_82c0a56dd81cdf7a2153dc66de8ab472.setContent(html_a142666c13cad60de645a966873a7179);
+            
+        
+
+        circle_marker_805463683a0d9edc59c37654a8cc26d0.bindPopup(popup_82c0a56dd81cdf7a2153dc66de8ab472)
+        ;
+
+        
+    
+    
+            var circle_marker_7b6444b9ae942ac8f229e57b647d3c35 = L.circleMarker(
+                [41.91155368640068, -87.62677673950262],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.194, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_11f9ca4d492e67063e270e772e6dd2dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3edd1d3620805504ce084f58ce7ca5c = $(`<div id="html_e3edd1d3620805504ce084f58ce7ca5c" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & North Blvd</b><br>Season: Spring<br>Trips: 8194</div>`)[0];
+                popup_11f9ca4d492e67063e270e772e6dd2dd.setContent(html_e3edd1d3620805504ce084f58ce7ca5c);
+            
+        
+
+        circle_marker_7b6444b9ae942ac8f229e57b647d3c35.bindPopup(popup_11f9ca4d492e67063e270e772e6dd2dd)
+        ;
+
+        
+    
+    
+            var circle_marker_fb8f9d07cc6cc0b6fce5dc1cf9e335c9 = L.circleMarker(
+                [41.92624025652103, -87.63093931146827],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.951, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_15b04929d5cfa3f61a0c89db05c187f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fc366439eb4c828fdb8d985c7c8faca = $(`<div id="html_7fc366439eb4c828fdb8d985c7c8faca" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Spring<br>Trips: 7951</div>`)[0];
+                popup_15b04929d5cfa3f61a0c89db05c187f3.setContent(html_7fc366439eb4c828fdb8d985c7c8faca);
+            
+        
+
+        circle_marker_fb8f9d07cc6cc0b6fce5dc1cf9e335c9.bindPopup(popup_15b04929d5cfa3f61a0c89db05c187f3)
+        ;
+
+        
+    
+    
+            var circle_marker_8ffec4708cdf5276155c4d3ed61f76b4 = L.circleMarker(
+                [41.90329740216473, -87.63424596320293],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.51, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_54cfafbb0bb09cd8c9b2514bd09c641a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b14d88781ec6b6baef9883c83a142533 = $(`<div id="html_b14d88781ec6b6baef9883c83a142533" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Spring<br>Trips: 7510</div>`)[0];
+                popup_54cfafbb0bb09cd8c9b2514bd09c641a.setContent(html_b14d88781ec6b6baef9883c83a142533);
+            
+        
+
+        circle_marker_8ffec4708cdf5276155c4d3ed61f76b4.bindPopup(popup_54cfafbb0bb09cd8c9b2514bd09c641a)
+        ;
+
+        
+    
+    
+            var circle_marker_59b5e80ad275e5674f500184b380dce6 = L.circleMarker(
+                [41.86784529586118, -87.62293105311959],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.158000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_923b645a3924c26bd8b7a604314fb16c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b07f90025f7d6101249572c38c76f16 = $(`<div id="html_3b07f90025f7d6101249572c38c76f16" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Spring<br>Trips: 7158</div>`)[0];
+                popup_923b645a3924c26bd8b7a604314fb16c.setContent(html_3b07f90025f7d6101249572c38c76f16);
+            
+        
+
+        circle_marker_59b5e80ad275e5674f500184b380dce6.bindPopup(popup_923b645a3924c26bd8b7a604314fb16c)
+        ;
+
+        
+    
+    
+            var circle_marker_4bb4d95e870bbd986c97ef06bde1a4d8 = L.circleMarker(
+                [41.89149196374126, -87.62688045962835],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.93, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_ccedc946be6859ed685dfc72ebf11ebf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17fcf791eb550863e8ef2571aaca3a9b = $(`<div id="html_17fcf791eb550863e8ef2571aaca3a9b" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Spring<br>Trips: 6930</div>`)[0];
+                popup_ccedc946be6859ed685dfc72ebf11ebf.setContent(html_17fcf791eb550863e8ef2571aaca3a9b);
+            
+        
+
+        circle_marker_4bb4d95e870bbd986c97ef06bde1a4d8.bindPopup(popup_ccedc946be6859ed685dfc72ebf11ebf)
+        ;
+
+        
+    
+    
+            var circle_marker_93b6678ebeabea048dba5974b475c6eb = L.circleMarker(
+                [41.89420725150567, -87.62938098627124],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.915, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f917a59b449d21c49d89a6521fbbf1de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6cc4181c0bba522098988f4f4baa431 = $(`<div id="html_a6cc4181c0bba522098988f4f4baa431" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Spring<br>Trips: 6915</div>`)[0];
+                popup_f917a59b449d21c49d89a6521fbbf1de.setContent(html_a6cc4181c0bba522098988f4f4baa431);
+            
+        
+
+        circle_marker_93b6678ebeabea048dba5974b475c6eb.bindPopup(popup_f917a59b449d21c49d89a6521fbbf1de)
+        ;
+
+        
+    
+    
+            var circle_marker_31a910389023043cdf37af7294db0bb0 = L.circleMarker(
+                [41.91574283670824, -87.63459179484703],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.663, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e8071e0ff7d2e4e235d14b2f9e648176 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_149257b2274dbeacf59a3dac312a80b5 = $(`<div id="html_149257b2274dbeacf59a3dac312a80b5" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Spring<br>Trips: 6663</div>`)[0];
+                popup_e8071e0ff7d2e4e235d14b2f9e648176.setContent(html_149257b2274dbeacf59a3dac312a80b5);
+            
+        
+
+        circle_marker_31a910389023043cdf37af7294db0bb0.bindPopup(popup_e8071e0ff7d2e4e235d14b2f9e648176)
+        ;
+
+        
+    
+    
+            var circle_marker_a7d9a2f67d8677f0219ac85b466e4413 = L.circleMarker(
+                [41.91826761005133, -87.63615857991839],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.657, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4969efa10c6afaac8cfe01ca29b69c95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6098c026971baa2cafe601e63d80ebaf = $(`<div id="html_6098c026971baa2cafe601e63d80ebaf" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Spring<br>Trips: 6657</div>`)[0];
+                popup_4969efa10c6afaac8cfe01ca29b69c95.setContent(html_6098c026971baa2cafe601e63d80ebaf);
+            
+        
+
+        circle_marker_a7d9a2f67d8677f0219ac85b466e4413.bindPopup(popup_4969efa10c6afaac8cfe01ca29b69c95)
+        ;
+
+        
+    
+    
+            var circle_marker_06557ea8d58c9ed08b93f31dd605691d = L.circleMarker(
+                [41.88912774789273, -87.63849078625243],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.524000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_565e1ac2f3255e80e65a31323dac0240 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11793ac0c97de68ba32db698e18f98de = $(`<div id="html_11793ac0c97de68ba32db698e18f98de" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Spring<br>Trips: 6524</div>`)[0];
+                popup_565e1ac2f3255e80e65a31323dac0240.setContent(html_11793ac0c97de68ba32db698e18f98de);
+            
+        
+
+        circle_marker_06557ea8d58c9ed08b93f31dd605691d.bindPopup(popup_565e1ac2f3255e80e65a31323dac0240)
+        ;
+
+        
+    
+    
+            var circle_marker_44eda2ab1d66713c1519c04809a1822c = L.circleMarker(
+                [41.884722568904486, -87.61954438622972],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.517, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_82cec5ea6a72fe75d6fd82a87b4becc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_603c9dc052c2394bec386e458d881737 = $(`<div id="html_603c9dc052c2394bec386e458d881737" style="width: 100.0%; height: 100.0%;"><b>Columbus Dr & Randolph St</b><br>Season: Spring<br>Trips: 6517</div>`)[0];
+                popup_82cec5ea6a72fe75d6fd82a87b4becc9.setContent(html_603c9dc052c2394bec386e458d881737);
+            
+        
+
+        circle_marker_44eda2ab1d66713c1519c04809a1822c.bindPopup(popup_82cec5ea6a72fe75d6fd82a87b4becc9)
+        ;
+
+        
+    
+    
+            var circle_marker_18365a91b55de6e1ae65aa7a379ec16d = L.circleMarker(
+                [41.89486761644858, -87.63443250708278],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.472000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_5c9417905fa91d530d5ae5eaf1515e60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df3576a7ae2526f1a38a3f13ec58af62 = $(`<div id="html_df3576a7ae2526f1a38a3f13ec58af62" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Spring<br>Trips: 6472</div>`)[0];
+                popup_5c9417905fa91d530d5ae5eaf1515e60.setContent(html_df3576a7ae2526f1a38a3f13ec58af62);
+            
+        
+
+        circle_marker_18365a91b55de6e1ae65aa7a379ec16d.bindPopup(popup_5c9417905fa91d530d5ae5eaf1515e60)
+        ;
+
+        
+    
+    
+            var circle_marker_5852fba1bc8183ca833bf44f33a663c6 = L.circleMarker(
+                [41.867047767600944, -87.61547976761862],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.376999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_561c0e6824f7442dd44a9abbb69bdb2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46a661db8f32f60b1cd96fc85be7b5d0 = $(`<div id="html_46a661db8f32f60b1cd96fc85be7b5d0" style="width: 100.0%; height: 100.0%;"><b>Shedd Aquarium</b><br>Season: Spring<br>Trips: 6377</div>`)[0];
+                popup_561c0e6824f7442dd44a9abbb69bdb2e.setContent(html_46a661db8f32f60b1cd96fc85be7b5d0);
+            
+        
+
+        circle_marker_5852fba1bc8183ca833bf44f33a663c6.bindPopup(popup_561c0e6824f7442dd44a9abbb69bdb2e)
+        ;
+
+        
+    
+    
+            var circle_marker_cea7b920a46d9fb8457aaed41041772c = L.circleMarker(
+                [41.93748476255288, -87.64406538630755],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.177, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_20583b84655fd06f915871cfdb9b564a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16f6ec2ebbc7327244ba6a4923b04be3 = $(`<div id="html_16f6ec2ebbc7327244ba6a4923b04be3" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Spring<br>Trips: 6177</div>`)[0];
+                popup_20583b84655fd06f915871cfdb9b564a.setContent(html_16f6ec2ebbc7327244ba6a4923b04be3);
+            
+        
+
+        circle_marker_cea7b920a46d9fb8457aaed41041772c.bindPopup(popup_20583b84655fd06f915871cfdb9b564a)
+        ;
+
+        
+    
+    
+            var circle_marker_baaaa272ebe6878e814e8dba19b67c96 = L.circleMarker(
+                [41.8859896434315, -87.62411628153077],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.030999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_cccbdcf7173c6d6a2ed857fffe55b638 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_531d7c8548d8d29e29c376a94786ea03 = $(`<div id="html_531d7c8548d8d29e29c376a94786ea03" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Lake St</b><br>Season: Spring<br>Trips: 6031</div>`)[0];
+                popup_cccbdcf7173c6d6a2ed857fffe55b638.setContent(html_531d7c8548d8d29e29c376a94786ea03);
+            
+        
+
+        circle_marker_baaaa272ebe6878e814e8dba19b67c96.bindPopup(popup_cccbdcf7173c6d6a2ed857fffe55b638)
+        ;
+
+        
+    
+    
+            var circle_marker_70a5859632ba9a697ce8aacefcfb982d = L.circleMarker(
+                [41.891690542666026, -87.620564591066],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.865, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_fc68bc58656ce976d87e4b0ebba44d52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a691768e50951be907187a931aedbf4 = $(`<div id="html_7a691768e50951be907187a931aedbf4" style="width: 100.0%; height: 100.0%;"><b>Fairbanks Ct & Grand Ave</b><br>Season: Spring<br>Trips: 5865</div>`)[0];
+                popup_fc68bc58656ce976d87e4b0ebba44d52.setContent(html_7a691768e50951be907187a931aedbf4);
+            
+        
+
+        circle_marker_70a5859632ba9a697ce8aacefcfb982d.bindPopup(popup_fc68bc58656ce976d87e4b0ebba44d52)
+        ;
+
+        
+    
+    
+            var circle_marker_7f11c4011e9219394e373ce16348966f = L.circleMarker(
+                [41.894303774328016, -87.62288992493673],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.839, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f4f7934ffc9012956958408d6fe6c0da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_749f971170597c3661c48be1e2bf2ec4 = $(`<div id="html_749f971170597c3661c48be1e2bf2ec4" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Spring<br>Trips: 5839</div>`)[0];
+                popup_f4f7934ffc9012956958408d6fe6c0da.setContent(html_749f971170597c3661c48be1e2bf2ec4);
+            
+        
+
+        circle_marker_7f11c4011e9219394e373ce16348966f.bindPopup(popup_f4f7934ffc9012956958408d6fe6c0da)
+        ;
+
+        
+    
+    
+            var circle_marker_60b68f2dbd9003c95b161abd873ec50b = L.circleMarker(
+                [41.92165838502057, -87.64419688740968],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.834, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_2944ddbe1f733c4ca3157fb9fa80d9b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33c60c71b9d92f9ef3d33f238420749f = $(`<div id="html_33c60c71b9d92f9ef3d33f238420749f" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Spring<br>Trips: 5834</div>`)[0];
+                popup_2944ddbe1f733c4ca3157fb9fa80d9b6.setContent(html_33c60c71b9d92f9ef3d33f238420749f);
+            
+        
+
+        circle_marker_60b68f2dbd9003c95b161abd873ec50b.bindPopup(popup_2944ddbe1f733c4ca3157fb9fa80d9b6)
+        ;
+
+        
+    
+    
+            var circle_marker_67b226bcfefbbbe5288d00643ea48477 = L.circleMarker(
+                [41.883785718656746, -87.62456677309704],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.812000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_aa6aea76bc2194ac12d899023d231787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68ae732a9b1670c382aa8c339d5853b0 = $(`<div id="html_68ae732a9b1670c382aa8c339d5853b0" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>Season: Spring<br>Trips: 5812</div>`)[0];
+                popup_aa6aea76bc2194ac12d899023d231787.setContent(html_68ae732a9b1670c382aa8c339d5853b0);
+            
+        
+
+        circle_marker_67b226bcfefbbbe5288d00643ea48477.bindPopup(popup_aa6aea76bc2194ac12d899023d231787)
+        ;
+
+        
+    
+    
+            var circle_marker_7aced6ed3b80c98024966edb25adf5a2 = L.circleMarker(
+                [41.90664930857038, -87.63497001527588],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.668, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_665cfae5cb54bce2b9790fde996db419 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ef9a222062d4043fcd7563765ab2bc6 = $(`<div id="html_8ef9a222062d4043fcd7563765ab2bc6" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Spring<br>Trips: 5668</div>`)[0];
+                popup_665cfae5cb54bce2b9790fde996db419.setContent(html_8ef9a222062d4043fcd7563765ab2bc6);
+            
+        
+
+        circle_marker_7aced6ed3b80c98024966edb25adf5a2.bindPopup(popup_665cfae5cb54bce2b9790fde996db419)
+        ;
+
+        
+    
+    
+            var circle_marker_9a54afcbaaeccb4bcee5f1d39dc24cca = L.circleMarker(
+                [41.890730593561486, -87.61858489963572],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.606, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_2be7a19d22b34da66c62cc15362658fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_125fc5bac9668db9f9a4b014019da2ed = $(`<div id="html_125fc5bac9668db9f9a4b014019da2ed" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Spring<br>Trips: 5606</div>`)[0];
+                popup_2be7a19d22b34da66c62cc15362658fc.setContent(html_125fc5bac9668db9f9a4b014019da2ed);
+            
+        
+
+        circle_marker_9a54afcbaaeccb4bcee5f1d39dc24cca.bindPopup(popup_2be7a19d22b34da66c62cc15362658fc)
+        ;
+
+        
+    
+    
+            var circle_marker_5998faffea0522e45ee79932f12415ab = L.circleMarker(
+                [41.888549355700626, -87.64424715796484],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.347000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_57dade46f9fa51597050637e6922a51b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00bdd5604e20de3e142968206db99fa7 = $(`<div id="html_00bdd5604e20de3e142968206db99fa7" style="width: 100.0%; height: 100.0%;"><b>Desplaines St & Kinzie St</b><br>Season: Spring<br>Trips: 5347</div>`)[0];
+                popup_57dade46f9fa51597050637e6922a51b.setContent(html_00bdd5604e20de3e142968206db99fa7);
+            
+        
+
+        circle_marker_5998faffea0522e45ee79932f12415ab.bindPopup(popup_57dade46f9fa51597050637e6922a51b)
+        ;
+
+        
+    
+    
+            var circle_marker_6b422dd82c870ca355b41b4d77ad3a42 = L.circleMarker(
+                [41.899087249403706, -87.62981701185767],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.276, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_bd62d6ea6f0f7f4be3e33613d828f706 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89966d31ff303338f6f7ce1e3d7916fb = $(`<div id="html_89966d31ff303338f6f7ce1e3d7916fb" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>Season: Spring<br>Trips: 5276</div>`)[0];
+                popup_bd62d6ea6f0f7f4be3e33613d828f706.setContent(html_89966d31ff303338f6f7ce1e3d7916fb);
+            
+        
+
+        circle_marker_6b422dd82c870ca355b41b4d77ad3a42.bindPopup(popup_bd62d6ea6f0f7f4be3e33613d828f706)
+        ;
+
+        
+    
+    
+            var circle_marker_099bcd5a4bd3f6a59c1d6a7fce46eeb8 = L.circleMarker(
+                [41.925892607252536, -87.64903695665976],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.257, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_cbdc9b0a778929ec0e21df41e975d08c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c3e9cc62d3ede792b6e20a66b31623d = $(`<div id="html_1c3e9cc62d3ede792b6e20a66b31623d" style="width: 100.0%; height: 100.0%;"><b>Lincoln Ave & Fullerton Ave</b><br>Season: Spring<br>Trips: 5257</div>`)[0];
+                popup_cbdc9b0a778929ec0e21df41e975d08c.setContent(html_1c3e9cc62d3ede792b6e20a66b31623d);
+            
+        
+
+        circle_marker_099bcd5a4bd3f6a59c1d6a7fce46eeb8.bindPopup(popup_cbdc9b0a778929ec0e21df41e975d08c)
+        ;
+
+        
+    
+    
+            var circle_marker_5d5cca8e7c9f97250ede618d9dae3d52 = L.circleMarker(
+                [41.86725594197909, -87.62590821577403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.214, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_110de1d8256b6b87c958b52395c60cb2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c4a4ce098b6fc69389b8ec8daa05a50 = $(`<div id="html_7c4a4ce098b6fc69389b8ec8daa05a50" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Roosevelt Rd</b><br>Season: Spring<br>Trips: 5214</div>`)[0];
+                popup_110de1d8256b6b87c958b52395c60cb2.setContent(html_7c4a4ce098b6fc69389b8ec8daa05a50);
+            
+        
+
+        circle_marker_5d5cca8e7c9f97250ede618d9dae3d52.bindPopup(popup_110de1d8256b6b87c958b52395c60cb2)
+        ;
+
+        
+    
+    
+            var circle_marker_093fe485b44ca58d7bd9a9c7e5e7cea5 = L.circleMarker(
+                [41.89244419240705, -87.61200275405949],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.615, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_90e4acc3031d87a38bea3fd8a1be6715 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cf2d114d6927c0759a25527ae9c16bc = $(`<div id="html_1cf2d114d6927c0759a25527ae9c16bc" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Summer<br>Trips: 45615</div>`)[0];
+                popup_90e4acc3031d87a38bea3fd8a1be6715.setContent(html_1cf2d114d6927c0759a25527ae9c16bc);
+            
+        
+
+        circle_marker_093fe485b44ca58d7bd9a9c7e5e7cea5.bindPopup(popup_90e4acc3031d87a38bea3fd8a1be6715)
+        ;
+
+        
+    
+    
+            var circle_marker_ece98e5065a40d53959c021753e88624 = L.circleMarker(
+                [41.90089187350415, -87.62388690776868],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.766, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_bd55fb505e328ba4baa2a42358d5331a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26c70bed428340e66435e7e6d2fcdf46 = $(`<div id="html_26c70bed428340e66435e7e6d2fcdf46" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Summer<br>Trips: 23766</div>`)[0];
+                popup_bd55fb505e328ba4baa2a42358d5331a.setContent(html_26c70bed428340e66435e7e6d2fcdf46);
+            
+        
+
+        circle_marker_ece98e5065a40d53959c021753e88624.bindPopup(popup_bd55fb505e328ba4baa2a42358d5331a)
+        ;
+
+        
+    
+    
+            var circle_marker_865869c6f54439f41d0546b8090c866b = L.circleMarker(
+                [41.88123158613652, -87.62416697756947],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.313, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_9a8e6c7ce2079efe241415c9cd745e32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d78c785a45f0ec42ccff0a8f9c7bc71e = $(`<div id="html_d78c785a45f0ec42ccff0a8f9c7bc71e" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Summer<br>Trips: 20313</div>`)[0];
+                popup_9a8e6c7ce2079efe241415c9cd745e32.setContent(html_d78c785a45f0ec42ccff0a8f9c7bc71e);
+            
+        
+
+        circle_marker_865869c6f54439f41d0546b8090c866b.bindPopup(popup_9a8e6c7ce2079efe241415c9cd745e32)
+        ;
+
+        
+    
+    
+            var circle_marker_6a6f07192333466c815b7534829a9e34 = L.circleMarker(
+                [41.912277051510046, -87.63482632652403],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.015, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c0952dd82724e2397a2f3fea6938d5d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0dc2b515af8216ba6438d7c5785dcf0b = $(`<div id="html_0dc2b515af8216ba6438d7c5785dcf0b" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Summer<br>Trips: 20015</div>`)[0];
+                popup_c0952dd82724e2397a2f3fea6938d5d2.setContent(html_0dc2b515af8216ba6438d7c5785dcf0b);
+            
+        
+
+        circle_marker_6a6f07192333466c815b7534829a9e34.bindPopup(popup_c0952dd82724e2397a2f3fea6938d5d2)
+        ;
+
+        
+    
+    
+            var circle_marker_045379d88da3af25dc623e771e15fd33 = L.circleMarker(
+                [41.9264640552758, -87.63080307134479],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.897, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4ae1c7a92697dc1dc68d0acad489fe08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13c81a39928b0f6317a119061a68a6d2 = $(`<div id="html_13c81a39928b0f6317a119061a68a6d2" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Summer<br>Trips: 19897</div>`)[0];
+                popup_4ae1c7a92697dc1dc68d0acad489fe08.setContent(html_13c81a39928b0f6317a119061a68a6d2);
+            
+        
+
+        circle_marker_045379d88da3af25dc623e771e15fd33.bindPopup(popup_4ae1c7a92697dc1dc68d0acad489fe08)
+        ;
+
+        
+    
+    
+            var circle_marker_01d45f48b32dd4583b22080e4299af25 = L.circleMarker(
+                [41.902817597275565, -87.63120607336613],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.593, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_69d6eceea9b3aa2fe7bac6d5eb7abfbd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d400ae276da1d6568c5ff2b0b4c2c298 = $(`<div id="html_d400ae276da1d6568c5ff2b0b4c2c298" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Summer<br>Trips: 17593</div>`)[0];
+                popup_69d6eceea9b3aa2fe7bac6d5eb7abfbd.setContent(html_d400ae276da1d6568c5ff2b0b4c2c298);
+            
+        
+
+        circle_marker_01d45f48b32dd4583b22080e4299af25.bindPopup(popup_69d6eceea9b3aa2fe7bac6d5eb7abfbd)
+        ;
+
+        
+    
+    
+            var circle_marker_7a2ff16739289332b5a245b5670b09de = L.circleMarker(
+                [41.90303659447402, -87.63420183243718],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.638, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e56547fef4e86337e83b5724c1505729 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a897a1a6db9acf3af7a09a3fd853499 = $(`<div id="html_4a897a1a6db9acf3af7a09a3fd853499" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Summer<br>Trips: 16638</div>`)[0];
+                popup_e56547fef4e86337e83b5724c1505729.setContent(html_4a897a1a6db9acf3af7a09a3fd853499);
+            
+        
+
+        circle_marker_7a2ff16739289332b5a245b5670b09de.bindPopup(popup_e56547fef4e86337e83b5724c1505729)
+        ;
+
+        
+    
+    
+            var circle_marker_ed7da644551f69c7f2d957229ec65f25 = L.circleMarker(
+                [41.91566168847928, -87.63463321031915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.356, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_023431194e7daf0a6e8b6ba8141b6bd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_147ad232a6c70358a59e64ad6a76adfe = $(`<div id="html_147ad232a6c70358a59e64ad6a76adfe" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Summer<br>Trips: 16356</div>`)[0];
+                popup_023431194e7daf0a6e8b6ba8141b6bd0.setContent(html_147ad232a6c70358a59e64ad6a76adfe);
+            
+        
+
+        circle_marker_ed7da644551f69c7f2d957229ec65f25.bindPopup(popup_023431194e7daf0a6e8b6ba8141b6bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_cc5fdc7644d5c769803254d8c55d42cc = L.circleMarker(
+                [41.91817424111354, -87.63620371284686],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.156, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_ef54a9490eea5ee9fe3e77280d743f90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c3a3ea3e0aa6d7440273fcc78d49f95 = $(`<div id="html_4c3a3ea3e0aa6d7440273fcc78d49f95" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Summer<br>Trips: 15156</div>`)[0];
+                popup_ef54a9490eea5ee9fe3e77280d743f90.setContent(html_4c3a3ea3e0aa6d7440273fcc78d49f95);
+            
+        
+
+        circle_marker_cc5fdc7644d5c769803254d8c55d42cc.bindPopup(popup_ef54a9490eea5ee9fe3e77280d743f90)
+        ;
+
+        
+    
+    
+            var circle_marker_44b2a26ae0ca21f019663a72f6017a9a = L.circleMarker(
+                [41.91166780395606, -87.62671558075684],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.121000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_55807b986bf92f8753f1a2153157cdcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96cdd1f9a6b984541f326ebf8e9c6142 = $(`<div id="html_96cdd1f9a6b984541f326ebf8e9c6142" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & North Blvd</b><br>Season: Summer<br>Trips: 15121</div>`)[0];
+                popup_55807b986bf92f8753f1a2153157cdcc.setContent(html_96cdd1f9a6b984541f326ebf8e9c6142);
+            
+        
+
+        circle_marker_44b2a26ae0ca21f019663a72f6017a9a.bindPopup(popup_55807b986bf92f8753f1a2153157cdcc)
+        ;
+
+        
+    
+    
+            var circle_marker_6230cb2a04609b822aa3b4b48c22aa8b = L.circleMarker(
+                [41.89155184731735, -87.62691475019972],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.58, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_588eb88475c8b3071cfbf87aa7fae57b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e5661bcc67c1731d977199881499e82 = $(`<div id="html_8e5661bcc67c1731d977199881499e82" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Summer<br>Trips: 14580</div>`)[0];
+                popup_588eb88475c8b3071cfbf87aa7fae57b.setContent(html_8e5661bcc67c1731d977199881499e82);
+            
+        
+
+        circle_marker_6230cb2a04609b822aa3b4b48c22aa8b.bindPopup(popup_588eb88475c8b3071cfbf87aa7fae57b)
+        ;
+
+        
+    
+    
+            var circle_marker_45793aa637db89f643a92510b7c9542d = L.circleMarker(
+                [41.86723457780085, -87.61520995583545],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.714, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_771bd8714c57bfb7f6ae5f4747c21cc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0881f2f6e1489829bc84b1bfda12a85a = $(`<div id="html_0881f2f6e1489829bc84b1bfda12a85a" style="width: 100.0%; height: 100.0%;"><b>Shedd Aquarium</b><br>Season: Summer<br>Trips: 13714</div>`)[0];
+                popup_771bd8714c57bfb7f6ae5f4747c21cc7.setContent(html_0881f2f6e1489829bc84b1bfda12a85a);
+            
+        
+
+        circle_marker_45793aa637db89f643a92510b7c9542d.bindPopup(popup_771bd8714c57bfb7f6ae5f4747c21cc7)
+        ;
+
+        
+    
+    
+            var circle_marker_8eb80c8b1be92eed3bb28aeb45d5f437 = L.circleMarker(
+                [41.88924203358287, -87.63864274822468],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.457, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a68926ad2dc67a621427f82bd97c2522 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c08f59b490de8eda5e54be4881fd99be = $(`<div id="html_c08f59b490de8eda5e54be4881fd99be" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Summer<br>Trips: 13457</div>`)[0];
+                popup_a68926ad2dc67a621427f82bd97c2522.setContent(html_c08f59b490de8eda5e54be4881fd99be);
+            
+        
+
+        circle_marker_8eb80c8b1be92eed3bb28aeb45d5f437.bindPopup(popup_a68926ad2dc67a621427f82bd97c2522)
+        ;
+
+        
+    
+    
+            var circle_marker_9b5171263237123dd77fdfbb11a9d636 = L.circleMarker(
+                [41.93759528509052, -87.64411203011147],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.457, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_3154d19f50d453c00ed286184babf8ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9daae0d7f7c558773b1f6e5100d1412 = $(`<div id="html_c9daae0d7f7c558773b1f6e5100d1412" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Summer<br>Trips: 13457</div>`)[0];
+                popup_3154d19f50d453c00ed286184babf8ac.setContent(html_c9daae0d7f7c558773b1f6e5100d1412);
+            
+        
+
+        circle_marker_9b5171263237123dd77fdfbb11a9d636.bindPopup(popup_3154d19f50d453c00ed286184babf8ac)
+        ;
+
+        
+    
+    
+            var circle_marker_cea52e52d8b93e0eafbcafde89ee6133 = L.circleMarker(
+                [41.893908714233575, -87.62947296707728],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.339, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e0efc09d902c310e5922e82a51c5dd0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fba7fc1f9fe2beeb7b604fc4b0c9feb3 = $(`<div id="html_fba7fc1f9fe2beeb7b604fc4b0c9feb3" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Summer<br>Trips: 13339</div>`)[0];
+                popup_e0efc09d902c310e5922e82a51c5dd0a.setContent(html_fba7fc1f9fe2beeb7b604fc4b0c9feb3);
+            
+        
+
+        circle_marker_cea52e52d8b93e0eafbcafde89ee6133.bindPopup(popup_e0efc09d902c310e5922e82a51c5dd0a)
+        ;
+
+        
+    
+    
+            var circle_marker_ab3f53e4c17c0e9a424f02aeb8d67369 = L.circleMarker(
+                [41.86776826317853, -87.62322811257502],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.284, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a6e008e8e519141ccb3ce1ca6606cbef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f1ad87e27d410e3f661e3fce5fd2f98 = $(`<div id="html_4f1ad87e27d410e3f661e3fce5fd2f98" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Summer<br>Trips: 13284</div>`)[0];
+                popup_a6e008e8e519141ccb3ce1ca6606cbef.setContent(html_4f1ad87e27d410e3f661e3fce5fd2f98);
+            
+        
+
+        circle_marker_ab3f53e4c17c0e9a424f02aeb8d67369.bindPopup(popup_a6e008e8e519141ccb3ce1ca6606cbef)
+        ;
+
+        
+    
+    
+            var circle_marker_262b481c243c10523b840a0654933eb4 = L.circleMarker(
+                [41.911832566522946, -87.62686754024739],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.189, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_bdb7818d97ccb2352b1c4ae0fad7c122 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da89b3b1b7035a3ea9e60a64fb679e68 = $(`<div id="html_da89b3b1b7035a3ea9e60a64fb679e68" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & North Blvd</b><br>Season: Summer<br>Trips: 13189</div>`)[0];
+                popup_bdb7818d97ccb2352b1c4ae0fad7c122.setContent(html_da89b3b1b7035a3ea9e60a64fb679e68);
+            
+        
+
+        circle_marker_262b481c243c10523b840a0654933eb4.bindPopup(popup_bdb7818d97ccb2352b1c4ae0fad7c122)
+        ;
+
+        
+    
+    
+            var circle_marker_9ffd8d18b6193a5a8872d708e5630609 = L.circleMarker(
+                [41.9216312262878, -87.64430240337776],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.081, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a5ee8dcd7f0c8303106fb48de2dc56d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60aebfffc845a8cf4e4ccfccc5939999 = $(`<div id="html_60aebfffc845a8cf4e4ccfccc5939999" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Summer<br>Trips: 13081</div>`)[0];
+                popup_a5ee8dcd7f0c8303106fb48de2dc56d3.setContent(html_60aebfffc845a8cf4e4ccfccc5939999);
+            
+        
+
+        circle_marker_9ffd8d18b6193a5a8872d708e5630609.bindPopup(popup_a5ee8dcd7f0c8303106fb48de2dc56d3)
+        ;
+
+        
+    
+    
+            var circle_marker_6d2dc687db64e49f06fcb195c676b8bc = L.circleMarker(
+                [41.894585180886814, -87.63432965934715],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.925, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4d0f9678066bdec5dd0da3bbbeb556d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8879bf5fa009879561501af6d3323f16 = $(`<div id="html_8879bf5fa009879561501af6d3323f16" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Summer<br>Trips: 12925</div>`)[0];
+                popup_4d0f9678066bdec5dd0da3bbbeb556d0.setContent(html_8879bf5fa009879561501af6d3323f16);
+            
+        
+
+        circle_marker_6d2dc687db64e49f06fcb195c676b8bc.bindPopup(popup_4d0f9678066bdec5dd0da3bbbeb556d0)
+        ;
+
+        
+    
+    
+            var circle_marker_70930c84676a50ee7b8dcc64975491a3 = L.circleMarker(
+                [41.94034152751242, -87.6532027621312],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.372, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_7e40f6ff0e99010c8a061baa1f64845e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_460b149b7c594e39531418a6b4fedf57 = $(`<div id="html_460b149b7c594e39531418a6b4fedf57" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Season: Summer<br>Trips: 12372</div>`)[0];
+                popup_7e40f6ff0e99010c8a061baa1f64845e.setContent(html_460b149b7c594e39531418a6b4fedf57);
+            
+        
+
+        circle_marker_70930c84676a50ee7b8dcc64975491a3.bindPopup(popup_7e40f6ff0e99010c8a061baa1f64845e)
+        ;
+
+        
+    
+    
+            var circle_marker_8d8c51b6453dbf09a7691e801aeaa721 = L.circleMarker(
+                [41.880783234663504, -87.61657039041349],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.319000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c917a798d4c15ca5ffa3513ed3cec391 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69ce75d6c1098f8ddd075d2d4d9b74b5 = $(`<div id="html_69ce75d6c1098f8ddd075d2d4d9b74b5" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & Monroe St</b><br>Season: Summer<br>Trips: 12319</div>`)[0];
+                popup_c917a798d4c15ca5ffa3513ed3cec391.setContent(html_69ce75d6c1098f8ddd075d2d4d9b74b5);
+            
+        
+
+        circle_marker_8d8c51b6453dbf09a7691e801aeaa721.bindPopup(popup_c917a798d4c15ca5ffa3513ed3cec391)
+        ;
+
+        
+    
+    
+            var circle_marker_7df3af9007df76d6ec78b5625f846926 = L.circleMarker(
+                [41.89411561751774, -87.62270221280421],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.291, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c33a29676948ea4c890d323f77592a02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0bf386f9382d4c6730f4bafe54ae9c4e = $(`<div id="html_0bf386f9382d4c6730f4bafe54ae9c4e" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Summer<br>Trips: 12291</div>`)[0];
+                popup_c33a29676948ea4c890d323f77592a02.setContent(html_0bf386f9382d4c6730f4bafe54ae9c4e);
+            
+        
+
+        circle_marker_7df3af9007df76d6ec78b5625f846926.bindPopup(popup_c33a29676948ea4c890d323f77592a02)
+        ;
+
+        
+    
+    
+            var circle_marker_50476bb94fb153bef13a7964e0c96cfd = L.circleMarker(
+                [41.890907724932525, -87.61852829239493],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.108, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_9914f32d830069e43417d836f50f6cc8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_224c337049cdc8f643cc32eb9d2017b4 = $(`<div id="html_224c337049cdc8f643cc32eb9d2017b4" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Summer<br>Trips: 12108</div>`)[0];
+                popup_9914f32d830069e43417d836f50f6cc8.setContent(html_224c337049cdc8f643cc32eb9d2017b4);
+            
+        
+
+        circle_marker_50476bb94fb153bef13a7964e0c96cfd.bindPopup(popup_9914f32d830069e43417d836f50f6cc8)
+        ;
+
+        
+    
+    
+            var circle_marker_d9884665b836652195bf74e6b361b8ac = L.circleMarker(
+                [41.88186071896697, -87.6486646234746],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.863, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_78ac59407c5917115dc07a209cc03a0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82a9bfc80642f6c590a9ab4c8c610b46 = $(`<div id="html_82a9bfc80642f6c590a9ab4c8c610b46" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Summer<br>Trips: 11863</div>`)[0];
+                popup_78ac59407c5917115dc07a209cc03a0d.setContent(html_82a9bfc80642f6c590a9ab4c8c610b46);
+            
+        
+
+        circle_marker_d9884665b836652195bf74e6b361b8ac.bindPopup(popup_78ac59407c5917115dc07a209cc03a0d)
+        ;
+
+        
+    
+    
+            var circle_marker_623ffd8f1d39c64106bf171082769922 = L.circleMarker(
+                [41.906723396751865, -87.6347079314029],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.849, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_36baf5859bfc3d3bf9036d3e0a4c521b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5b10cd8e9d74ca4f1c4602765e235be = $(`<div id="html_d5b10cd8e9d74ca4f1c4602765e235be" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Summer<br>Trips: 11849</div>`)[0];
+                popup_36baf5859bfc3d3bf9036d3e0a4c521b.setContent(html_d5b10cd8e9d74ca4f1c4602765e235be);
+            
+        
+
+        circle_marker_623ffd8f1d39c64106bf171082769922.bindPopup(popup_36baf5859bfc3d3bf9036d3e0a4c521b)
+        ;
+
+        
+    
+    
+            var circle_marker_47863bbc175e31a47c3feae92ebdeca1 = L.circleMarker(
+                [41.92598221203664, -87.63908551426532],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.581, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e5a58ea5cc7873770778187770cc18d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df8f43adb6f67487295b28f0c8ece698 = $(`<div id="html_df8f43adb6f67487295b28f0c8ece698" style="width: 100.0%; height: 100.0%;"><b>Lakeview Ave & Fullerton Pkwy</b><br>Season: Summer<br>Trips: 11581</div>`)[0];
+                popup_e5a58ea5cc7873770778187770cc18d7.setContent(html_df8f43adb6f67487295b28f0c8ece698);
+            
+        
+
+        circle_marker_47863bbc175e31a47c3feae92ebdeca1.bindPopup(popup_e5a58ea5cc7873770778187770cc18d7)
+        ;
+
+        
+    
+    
+            var circle_marker_0a517a3bdd592c18761289cbeb4a1bd4 = L.circleMarker(
+                [41.92585065256388, -87.6491472929558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.55, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_6678585f17fc2470547089b134f8eb36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32017ec9f6396aa53a5086ebc5971f1b = $(`<div id="html_32017ec9f6396aa53a5086ebc5971f1b" style="width: 100.0%; height: 100.0%;"><b>Lincoln Ave & Fullerton Ave</b><br>Season: Summer<br>Trips: 11550</div>`)[0];
+                popup_6678585f17fc2470547089b134f8eb36.setContent(html_32017ec9f6396aa53a5086ebc5971f1b);
+            
+        
+
+        circle_marker_0a517a3bdd592c18761289cbeb4a1bd4.bindPopup(popup_6678585f17fc2470547089b134f8eb36)
+        ;
+
+        
+    
+    
+            var circle_marker_aedd4fb2110656ffa0670812043ed661 = L.circleMarker(
+                [41.8919644841733, -87.62049364268654],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.387999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4fc8b109ac291cf10b97ea7c454c0fa4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5448ce66f34ebffb200345bdcfb87c74 = $(`<div id="html_5448ce66f34ebffb200345bdcfb87c74" style="width: 100.0%; height: 100.0%;"><b>Fairbanks Ct & Grand Ave</b><br>Season: Summer<br>Trips: 11388</div>`)[0];
+                popup_4fc8b109ac291cf10b97ea7c454c0fa4.setContent(html_5448ce66f34ebffb200345bdcfb87c74);
+            
+        
+
+        circle_marker_aedd4fb2110656ffa0670812043ed661.bindPopup(popup_4fc8b109ac291cf10b97ea7c454c0fa4)
+        ;
+
+        
+    
+    
+            var circle_marker_b85e8a2507b926af7b62f3f4987cdf34 = L.circleMarker(
+                [41.96394973977789, -87.63814196918177],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.191000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_cd0f42b45527aca7f90de578593b5f87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2575885d1a7bb140b608ae2319dfc6dd = $(`<div id="html_2575885d1a7bb140b608ae2319dfc6dd" style="width: 100.0%; height: 100.0%;"><b>Montrose Harbor</b><br>Season: Summer<br>Trips: 11191</div>`)[0];
+                popup_cd0f42b45527aca7f90de578593b5f87.setContent(html_2575885d1a7bb140b608ae2319dfc6dd);
+            
+        
+
+        circle_marker_b85e8a2507b926af7b62f3f4987cdf34.bindPopup(popup_cd0f42b45527aca7f90de578593b5f87)
+        ;
+
+        
+    
+    
+            var circle_marker_f2acaf07215313c6a0ed61dc0eab26b1 = L.circleMarker(
+                [41.886110474808014, -87.62408998683426],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.139, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_99c2b0b956c30df6afcbf3b74739cbf5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7eabf3c65e3f6484258452759cb1962 = $(`<div id="html_c7eabf3c65e3f6484258452759cb1962" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Lake St</b><br>Season: Summer<br>Trips: 11139</div>`)[0];
+                popup_99c2b0b956c30df6afcbf3b74739cbf5.setContent(html_c7eabf3c65e3f6484258452759cb1962);
+            
+        
+
+        circle_marker_f2acaf07215313c6a0ed61dc0eab26b1.bindPopup(popup_99c2b0b956c30df6afcbf3b74739cbf5)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f826533c4b9ca3cee0f7503e0492e3 = L.circleMarker(
+                [41.90297532077243, -87.63150523277373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.193, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_47d91ad05399b0bc20c5b60bf88cbcc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5f5fa9b3b34473ab708fce23e81b55a = $(`<div id="html_f5f5fa9b3b34473ab708fce23e81b55a" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Winter<br>Trips: 3193</div>`)[0];
+                popup_47d91ad05399b0bc20c5b60bf88cbcc1.setContent(html_f5f5fa9b3b34473ab708fce23e81b55a);
+            
+        
+
+        circle_marker_e8f826533c4b9ca3cee0f7503e0492e3.bindPopup(popup_47d91ad05399b0bc20c5b60bf88cbcc1)
+        ;
+
+        
+    
+    
+            var circle_marker_3539aec65f93c738a5e1c778e08de8a6 = L.circleMarker(
+                [41.88919941383645, -87.63839191492403],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.096, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_5488c70fe317c6ef9acef5d30c2118a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa986ed5765ee4ddf7f597b29d7534d3 = $(`<div id="html_aa986ed5765ee4ddf7f597b29d7534d3" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Winter<br>Trips: 3096</div>`)[0];
+                popup_5488c70fe317c6ef9acef5d30c2118a5.setContent(html_aa986ed5765ee4ddf7f597b29d7534d3);
+            
+        
+
+        circle_marker_3539aec65f93c738a5e1c778e08de8a6.bindPopup(popup_5488c70fe317c6ef9acef5d30c2118a5)
+        ;
+
+        
+    
+    
+            var circle_marker_1a5c1d0e7f9e2e41636748c44ea8520c = L.circleMarker(
+                [41.8940137463994, -87.62946665178592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.725, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_acc905aadac3062e608b85adb6f57cfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b8bc569fce7de3adbc78f96698983b6 = $(`<div id="html_1b8bc569fce7de3adbc78f96698983b6" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Winter<br>Trips: 2725</div>`)[0];
+                popup_acc905aadac3062e608b85adb6f57cfc.setContent(html_1b8bc569fce7de3adbc78f96698983b6);
+            
+        
+
+        circle_marker_1a5c1d0e7f9e2e41636748c44ea8520c.bindPopup(popup_acc905aadac3062e608b85adb6f57cfc)
+        ;
+
+        
+    
+    
+            var circle_marker_484f8d19886edbcf39f0ac1cafc0486d = L.circleMarker(
+                [41.89424411144878, -87.62295168639447],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.629999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_4d8319419cdd5a2ab17fb51a3afedf5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43e9ddd799bde0c9161498cbd5ee9484 = $(`<div id="html_43e9ddd799bde0c9161498cbd5ee9484" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Winter<br>Trips: 2630</div>`)[0];
+                popup_4d8319419cdd5a2ab17fb51a3afedf5a.setContent(html_43e9ddd799bde0c9161498cbd5ee9484);
+            
+        
+
+        circle_marker_484f8d19886edbcf39f0ac1cafc0486d.bindPopup(popup_4d8319419cdd5a2ab17fb51a3afedf5a)
+        ;
+
+        
+    
+    
+            var circle_marker_33e1349df924e0be395b2f013e632393 = L.circleMarker(
+                [41.903307981976454, -87.63431974971296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.551, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c0fe5c1db15cf0e152e62fc5f0b92d58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aab2b13d5e32b1f443001536143d86bc = $(`<div id="html_aab2b13d5e32b1f443001536143d86bc" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Winter<br>Trips: 2551</div>`)[0];
+                popup_c0fe5c1db15cf0e152e62fc5f0b92d58.setContent(html_aab2b13d5e32b1f443001536143d86bc);
+            
+        
+
+        circle_marker_33e1349df924e0be395b2f013e632393.bindPopup(popup_c0fe5c1db15cf0e152e62fc5f0b92d58)
+        ;
+
+        
+    
+    
+            var circle_marker_3d042d29321ba05659cd23a2df07549d = L.circleMarker(
+                [41.89490502623539, -87.63430945866814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.535, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a4f05dc6e945f417c01251ba7d79089a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df775c4e213af74f475872a855b819aa = $(`<div id="html_df775c4e213af74f475872a855b819aa" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Winter<br>Trips: 2535</div>`)[0];
+                popup_a4f05dc6e945f417c01251ba7d79089a.setContent(html_df775c4e213af74f475872a855b819aa);
+            
+        
+
+        circle_marker_3d042d29321ba05659cd23a2df07549d.bindPopup(popup_a4f05dc6e945f417c01251ba7d79089a)
+        ;
+
+        
+    
+    
+            var circle_marker_35336d20753bb45b12eaf4eb7ca8a6d7 = L.circleMarker(
+                [41.88234027224658, -87.64112579467523],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.427, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_0a2700a7b83efd0396bc83639441d031 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbd79d01ea3876db01d9e99809d1b0fa = $(`<div id="html_fbd79d01ea3876db01d9e99809d1b0fa" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>Season: Winter<br>Trips: 2427</div>`)[0];
+                popup_0a2700a7b83efd0396bc83639441d031.setContent(html_fbd79d01ea3876db01d9e99809d1b0fa);
+            
+        
+
+        circle_marker_35336d20753bb45b12eaf4eb7ca8a6d7.bindPopup(popup_0a2700a7b83efd0396bc83639441d031)
+        ;
+
+        
+    
+    
+            var circle_marker_952b690ccde54dadfe00b109ba831555 = L.circleMarker(
+                [41.912265278891866, -87.63478796393078],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.427, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_b6c6f4cffdaf678906f3339394dae11f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f48069bef68c040eb7046736a76a50 = $(`<div id="html_03f48069bef68c040eb7046736a76a50" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Winter<br>Trips: 2427</div>`)[0];
+                popup_b6c6f4cffdaf678906f3339394dae11f.setContent(html_03f48069bef68c040eb7046736a76a50);
+            
+        
+
+        circle_marker_952b690ccde54dadfe00b109ba831555.bindPopup(popup_b6c6f4cffdaf678906f3339394dae11f)
+        ;
+
+        
+    
+    
+            var circle_marker_b634417284727012fec9755a47c56f4a = L.circleMarker(
+                [41.88451875450355, -87.6193274396818],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.349, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_cf13dce85281c660dc4afa533d043ac3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b695396b2db9260ffc0a83c2a8729f12 = $(`<div id="html_b695396b2db9260ffc0a83c2a8729f12" style="width: 100.0%; height: 100.0%;"><b>Columbus Dr & Randolph St</b><br>Season: Winter<br>Trips: 2349</div>`)[0];
+                popup_cf13dce85281c660dc4afa533d043ac3.setContent(html_b695396b2db9260ffc0a83c2a8729f12);
+            
+        
+
+        circle_marker_b634417284727012fec9755a47c56f4a.bindPopup(popup_cf13dce85281c660dc4afa533d043ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_173c51ebf76997c3e2ef7fbc6d8a6f3b = L.circleMarker(
+                [41.888764398508776, -87.644257772623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.332, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_7e5e6ad3545f311e8b3bd06ae19847f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffa19795f2c1247d02db889b72507436 = $(`<div id="html_ffa19795f2c1247d02db889b72507436" style="width: 100.0%; height: 100.0%;"><b>Desplaines St & Kinzie St</b><br>Season: Winter<br>Trips: 2332</div>`)[0];
+                popup_7e5e6ad3545f311e8b3bd06ae19847f2.setContent(html_ffa19795f2c1247d02db889b72507436);
+            
+        
+
+        circle_marker_173c51ebf76997c3e2ef7fbc6d8a6f3b.bindPopup(popup_7e5e6ad3545f311e8b3bd06ae19847f2)
+        ;
+
+        
+    
+    
+            var circle_marker_57e352e54d73730128fa7db517b3783d = L.circleMarker(
+                [41.891461732211845, -87.62689343133684],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.152000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_0a7a9c4a95c91b125e9e961e3a90c623 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d03b9167a27bda88a0aa171d0f83664c = $(`<div id="html_d03b9167a27bda88a0aa171d0f83664c" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Winter<br>Trips: 2152</div>`)[0];
+                popup_0a7a9c4a95c91b125e9e961e3a90c623.setContent(html_d03b9167a27bda88a0aa171d0f83664c);
+            
+        
+
+        circle_marker_57e352e54d73730128fa7db517b3783d.bindPopup(popup_0a7a9c4a95c91b125e9e961e3a90c623)
+        ;
+
+        
+    
+    
+            var circle_marker_f2400542210d67087831b80fd7963d42 = L.circleMarker(
+                [41.88353613763685, -87.64120359619146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.109, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_53bd9ffe6b414ecd75d64119a5dbc7b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eac04dad2e4ce52f61c99c5137b53331 = $(`<div id="html_eac04dad2e4ce52f61c99c5137b53331" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Washington Blvd</b><br>Season: Winter<br>Trips: 2109</div>`)[0];
+                popup_53bd9ffe6b414ecd75d64119a5dbc7b5.setContent(html_eac04dad2e4ce52f61c99c5137b53331);
+            
+        
+
+        circle_marker_f2400542210d67087831b80fd7963d42.bindPopup(popup_53bd9ffe6b414ecd75d64119a5dbc7b5)
+        ;
+
+        
+    
+    
+            var circle_marker_64b601fcaec36773b02e13b39be3558c = L.circleMarker(
+                [41.88418270867747, -87.6297957228092],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.987, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_7780b6c47453ce0dba0553a0b041572a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7106f96625bacb144b21d111e502ace = $(`<div id="html_b7106f96625bacb144b21d111e502ace" style="width: 100.0%; height: 100.0%;"><b>Daley Center Plaza</b><br>Season: Winter<br>Trips: 1987</div>`)[0];
+                popup_7780b6c47453ce0dba0553a0b041572a.setContent(html_b7106f96625bacb144b21d111e502ace);
+            
+        
+
+        circle_marker_64b601fcaec36773b02e13b39be3558c.bindPopup(popup_7780b6c47453ce0dba0553a0b041572a)
+        ;
+
+        
+    
+    
+            var circle_marker_83a72a7840c58b5fe7b9e193d707df3f = L.circleMarker(
+                [41.93762122161374, -87.64398172861883],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.975, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_44b2e073406769f5d70bb575b3e7150e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a269d979841a15d87a68e684bdb30316 = $(`<div id="html_a269d979841a15d87a68e684bdb30316" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Winter<br>Trips: 1975</div>`)[0];
+                popup_44b2e073406769f5d70bb575b3e7150e.setContent(html_a269d979841a15d87a68e684bdb30316);
+            
+        
+
+        circle_marker_83a72a7840c58b5fe7b9e193d707df3f.bindPopup(popup_44b2e073406769f5d70bb575b3e7150e)
+        ;
+
+        
+    
+    
+            var circle_marker_e2bc28ee61236c24c18bda7f7af50d04 = L.circleMarker(
+                [41.89008787402346, -87.63408576114573],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.961, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_76e255cf88d27afe827c9fc0c59c6d04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77b29de91134c3658726e2e0599bba33 = $(`<div id="html_77b29de91134c3658726e2e0599bba33" style="width: 100.0%; height: 100.0%;"><b>Wells St & Hubbard St</b><br>Season: Winter<br>Trips: 1961</div>`)[0];
+                popup_76e255cf88d27afe827c9fc0c59c6d04.setContent(html_77b29de91134c3658726e2e0599bba33);
+            
+        
+
+        circle_marker_e2bc28ee61236c24c18bda7f7af50d04.bindPopup(popup_76e255cf88d27afe827c9fc0c59c6d04)
+        ;
+
+        
+    
+    
+            var circle_marker_3d22bc62fa2c777d0a137d4773c3bb2c = L.circleMarker(
+                [41.94892738553677, -87.64877472527378],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.902, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_99f4f04d0869e8433568e88cfb37a81b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8f3905df7e907b9c3ecd53597e17f00 = $(`<div id="html_e8f3905df7e907b9c3ecd53597e17f00" style="width: 100.0%; height: 100.0%;"><b>Broadway & Waveland Ave</b><br>Season: Winter<br>Trips: 1902</div>`)[0];
+                popup_99f4f04d0869e8433568e88cfb37a81b.setContent(html_e8f3905df7e907b9c3ecd53597e17f00);
+            
+        
+
+        circle_marker_3d22bc62fa2c777d0a137d4773c3bb2c.bindPopup(popup_99f4f04d0869e8433568e88cfb37a81b)
+        ;
+
+        
+    
+    
+            var circle_marker_dc4c373e4c1caf18337d6ab3ada2f3a0 = L.circleMarker(
+                [41.88100329816626, -87.62979978175224],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.861, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_417d7705d707fd2c8ff4c0e399912175 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa6f56b7d81ab6ca523baf34953efe71 = $(`<div id="html_aa6f56b7d81ab6ca523baf34953efe71" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Monroe St</b><br>Season: Winter<br>Trips: 1861</div>`)[0];
+                popup_417d7705d707fd2c8ff4c0e399912175.setContent(html_aa6f56b7d81ab6ca523baf34953efe71);
+            
+        
+
+        circle_marker_dc4c373e4c1caf18337d6ab3ada2f3a0.bindPopup(popup_417d7705d707fd2c8ff4c0e399912175)
+        ;
+
+        
+    
+    
+            var circle_marker_b0b4de6835f087d03f17b4861c4dca7d = L.circleMarker(
+                [41.8945107926472, -87.61787927112498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8580000000000005, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_c293a7933e4345a4dcdcf1087032fc68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13ec4df539eae891ad28c63a26706de9 = $(`<div id="html_13ec4df539eae891ad28c63a26706de9" style="width: 100.0%; height: 100.0%;"><b>McClurg Ct & Erie St</b><br>Season: Winter<br>Trips: 1858</div>`)[0];
+                popup_c293a7933e4345a4dcdcf1087032fc68.setContent(html_13ec4df539eae891ad28c63a26706de9);
+            
+        
+
+        circle_marker_b0b4de6835f087d03f17b4861c4dca7d.bindPopup(popup_c293a7933e4345a4dcdcf1087032fc68)
+        ;
+
+        
+    
+    
+            var circle_marker_d6a98062a7be2a3db371798a06aca8fb = L.circleMarker(
+                [41.90354722685723, -87.6676633446624],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.817, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f3af3ff4be42349bf75bf7c6dcf9a9bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf1dae0ec6989c81318895fcd2169e8f = $(`<div id="html_cf1dae0ec6989c81318895fcd2169e8f" style="width: 100.0%; height: 100.0%;"><b>Ashland Ave & Division St</b><br>Season: Winter<br>Trips: 1817</div>`)[0];
+                popup_f3af3ff4be42349bf75bf7c6dcf9a9bb.setContent(html_cf1dae0ec6989c81318895fcd2169e8f);
+            
+        
+
+        circle_marker_d6a98062a7be2a3db371798a06aca8fb.bindPopup(popup_f3af3ff4be42349bf75bf7c6dcf9a9bb)
+        ;
+
+        
+    
+    
+            var circle_marker_d745849921f0c7398d1b39fa0444acc4 = L.circleMarker(
+                [41.78504133661099, -87.60103869662588],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.789, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a55691dfe4144e35cc101ee950399493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97707357c9df280d1736bb7d4dd8a119 = $(`<div id="html_97707357c9df280d1736bb7d4dd8a119" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>Season: Winter<br>Trips: 1789</div>`)[0];
+                popup_a55691dfe4144e35cc101ee950399493.setContent(html_97707357c9df280d1736bb7d4dd8a119);
+            
+        
+
+        circle_marker_d745849921f0c7398d1b39fa0444acc4.bindPopup(popup_a55691dfe4144e35cc101ee950399493)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f723e035c431bedd8723a25644757d = L.circleMarker(
+                [41.907913992475855, -87.63143473622858],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.78, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_a4f9191ce21e0c725822a7668bb79d75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b037d4a5e2f43859c5c1d690cff97b44 = $(`<div id="html_b037d4a5e2f43859c5c1d690cff97b44" style="width: 100.0%; height: 100.0%;"><b>Clark St & Schiller St</b><br>Season: Winter<br>Trips: 1780</div>`)[0];
+                popup_a4f9191ce21e0c725822a7668bb79d75.setContent(html_b037d4a5e2f43859c5c1d690cff97b44);
+            
+        
+
+        circle_marker_e8f723e035c431bedd8723a25644757d.bindPopup(popup_a4f9191ce21e0c725822a7668bb79d75)
+        ;
+
+        
+    
+    
+            var circle_marker_28319080af18342c910a9ed7d4ba0402 = L.circleMarker(
+                [41.892147676710984, -87.61220349551738],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.7780000000000005, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_ae0ae630c2ddd16c5e7aec87f7de2404 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fc19f1909f75121499473d1687c05fa = $(`<div id="html_9fc19f1909f75121499473d1687c05fa" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Winter<br>Trips: 1778</div>`)[0];
+                popup_ae0ae630c2ddd16c5e7aec87f7de2404.setContent(html_9fc19f1909f75121499473d1687c05fa);
+            
+        
+
+        circle_marker_28319080af18342c910a9ed7d4ba0402.bindPopup(popup_ae0ae630c2ddd16c5e7aec87f7de2404)
+        ;
+
+        
+    
+    
+            var circle_marker_991f3cf194daacb46092de9b237db54d = L.circleMarker(
+                [41.86788256648852, -87.62317952640639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.777, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_e849ffdc656cda017fb3b7e97634fedc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_048603261489d96fa3b46c26e19d25ea = $(`<div id="html_048603261489d96fa3b46c26e19d25ea" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Winter<br>Trips: 1777</div>`)[0];
+                popup_e849ffdc656cda017fb3b7e97634fedc.setContent(html_048603261489d96fa3b46c26e19d25ea);
+            
+        
+
+        circle_marker_991f3cf194daacb46092de9b237db54d.bindPopup(popup_e849ffdc656cda017fb3b7e97634fedc)
+        ;
+
+        
+    
+    
+            var circle_marker_741518ae512fb571523eeb7698b18d24 = L.circleMarker(
+                [41.89381131819283, -87.64166091182763],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.7669999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_8c52a90809e1da7c196ac6b37f0c35ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f795e0a4ead804988bab1e06cb152c4 = $(`<div id="html_7f795e0a4ead804988bab1e06cb152c4" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Erie St</b><br>Season: Winter<br>Trips: 1767</div>`)[0];
+                popup_8c52a90809e1da7c196ac6b37f0c35ef.setContent(html_7f795e0a4ead804988bab1e06cb152c4);
+            
+        
+
+        circle_marker_741518ae512fb571523eeb7698b18d24.bindPopup(popup_8c52a90809e1da7c196ac6b37f0c35ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f03b35875f39b41a46f700400f7a74d8 = L.circleMarker(
+                [41.881709602127124, -87.6486300861097],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.763, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_37c5b15c054c08e9b3a7aa190433bb57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28f86bb70dbd4feb5b594e2f81107256 = $(`<div id="html_28f86bb70dbd4feb5b594e2f81107256" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Winter<br>Trips: 1763</div>`)[0];
+                popup_37c5b15c054c08e9b3a7aa190433bb57.setContent(html_28f86bb70dbd4feb5b594e2f81107256);
+            
+        
+
+        circle_marker_f03b35875f39b41a46f700400f7a74d8.bindPopup(popup_37c5b15c054c08e9b3a7aa190433bb57)
+        ;
+
+        
+    
+    
+            var circle_marker_0895df3486acc832ecaf2423740f71ff = L.circleMarker(
+                [41.89911409181819, -87.62974628710333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.719, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_bfc07663ddff68da1a2f013e172bae3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1130257d98ced9fa8e9ac555b9b3dd6c = $(`<div id="html_1130257d98ced9fa8e9ac555b9b3dd6c" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>Season: Winter<br>Trips: 1719</div>`)[0];
+                popup_bfc07663ddff68da1a2f013e172bae3a.setContent(html_1130257d98ced9fa8e9ac555b9b3dd6c);
+            
+        
+
+        circle_marker_0895df3486acc832ecaf2423740f71ff.bindPopup(popup_bfc07663ddff68da1a2f013e172bae3a)
+        ;
+
+        
+    
+    
+            var circle_marker_cd045ffe9f79d19733f1f8634e063654 = L.circleMarker(
+                [41.791302279947104, -87.59978196756715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.703, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_466e71e5f61e99cb26bcd97f6969c721 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_356caa6555ee776fc14dbd2eacdda776 = $(`<div id="html_356caa6555ee776fc14dbd2eacdda776" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>Season: Winter<br>Trips: 1703</div>`)[0];
+                popup_466e71e5f61e99cb26bcd97f6969c721.setContent(html_356caa6555ee776fc14dbd2eacdda776);
+            
+        
+
+        circle_marker_cd045ffe9f79d19733f1f8634e063654.bindPopup(popup_466e71e5f61e99cb26bcd97f6969c721)
+        ;
+
+        
+    
+    
+            var circle_marker_a3a5c3694dc0234d88513ecd145df009 = L.circleMarker(
+                [41.91816332436237, -87.63625303434407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.696, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_6e241d62152cc4ce7ce76a5248be62b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_316a3f110d7d3780e372b7fdcb4b6309 = $(`<div id="html_316a3f110d7d3780e372b7fdcb4b6309" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Winter<br>Trips: 1696</div>`)[0];
+                popup_6e241d62152cc4ce7ce76a5248be62b7.setContent(html_316a3f110d7d3780e372b7fdcb4b6309);
+            
+        
+
+        circle_marker_a3a5c3694dc0234d88513ecd145df009.bindPopup(popup_6e241d62152cc4ce7ce76a5248be62b7)
+        ;
+
+        
+    
+    
+            var circle_marker_d0a7d868ef3f7ec51b2ed30d7f9f1ec7 = L.circleMarker(
+                [41.88396898480921, -87.62472062918398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6899999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_f12aa7161aa400774241569c0ed8e931 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00d4ae43a20f09fb932b3fe1b5e72cca = $(`<div id="html_00d4ae43a20f09fb932b3fe1b5e72cca" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>Season: Winter<br>Trips: 1690</div>`)[0];
+                popup_f12aa7161aa400774241569c0ed8e931.setContent(html_00d4ae43a20f09fb932b3fe1b5e72cca);
+            
+        
+
+        circle_marker_d0a7d868ef3f7ec51b2ed30d7f9f1ec7.bindPopup(popup_f12aa7161aa400774241569c0ed8e931)
+        ;
+
+        
+    
+    
+            var circle_marker_65d921669d38b9e501b3cc801da4c76f = L.circleMarker(
+                [41.86740200909446, -87.62580589244796],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.683, "stroke": true, "weight": 3}
+            ).addTo(map_297790d2fc71774a6b2902e71f1f186a);
+        
+    
+        var popup_33d84d19cd4b2256ed7bd9fdeeb2b28f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_551dced1cbfa84b81824d3837af9aeee = $(`<div id="html_551dced1cbfa84b81824d3837af9aeee" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Roosevelt Rd</b><br>Season: Winter<br>Trips: 1683</div>`)[0];
+                popup_33d84d19cd4b2256ed7bd9fdeeb2b28f.setContent(html_551dced1cbfa84b81824d3837af9aeee);
+            
+        
+
+        circle_marker_65d921669d38b9e501b3cc801da4c76f.bindPopup(popup_33d84d19cd4b2256ed7bd9fdeeb2b28f)
+        ;
+
+        
+    
+</script>
+</html>

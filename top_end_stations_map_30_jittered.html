@@ -1,0 +1,4903 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4efae520026b770081e1691d0881f276 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4efae520026b770081e1691d0881f276" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4efae520026b770081e1691d0881f276 = L.map(
+                "map_4efae520026b770081e1691d0881f276",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_4efae520026b770081e1691d0881f276);
+
+            
+
+        
+    
+            var tile_layer_8f817b0bb13044753bddc8c4144bc20c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8f817b0bb13044753bddc8c4144bc20c.addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+            var regular_polygon_marker_f35904df0f877c00494bf87555da0288 = new L.RegularPolygonMarker(
+                [41.89241801808804, -87.61201327349062],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 25.912,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_cad85f6531b064030c54121429e2216b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1751f0f9de5f2e305a7fb17c869ebf1a = $(`<div id="html_1751f0f9de5f2e305a7fb17c869ebf1a" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Autumn<br>Trips: 19912</div>`)[0];
+                popup_cad85f6531b064030c54121429e2216b.setContent(html_1751f0f9de5f2e305a7fb17c869ebf1a);
+            
+        
+
+        regular_polygon_marker_f35904df0f877c00494bf87555da0288.bindPopup(popup_cad85f6531b064030c54121429e2216b)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_34df7fbc6982dc1d4c463c7975685a41 = new L.RegularPolygonMarker(
+                [41.91207710399593, -87.63464113658709],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.914,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_b611643de1bede060c031c563542d388 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ec66901357ae4fc5dd94a2173bf6fa7 = $(`<div id="html_2ec66901357ae4fc5dd94a2173bf6fa7" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Autumn<br>Trips: 12914</div>`)[0];
+                popup_b611643de1bede060c031c563542d388.setContent(html_2ec66901357ae4fc5dd94a2173bf6fa7);
+            
+        
+
+        regular_polygon_marker_34df7fbc6982dc1d4c463c7975685a41.bindPopup(popup_b611643de1bede060c031c563542d388)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_403cef5aa2f6b85161651480f7541f60 = new L.RegularPolygonMarker(
+                [41.90279465160771, -87.63156514769163],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.833,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_9fda17c70261c66354469f558503ef69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_026027944f5b33d879f8856010ea2a1f = $(`<div id="html_026027944f5b33d879f8856010ea2a1f" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Autumn<br>Trips: 11833</div>`)[0];
+                popup_9fda17c70261c66354469f558503ef69.setContent(html_026027944f5b33d879f8856010ea2a1f);
+            
+        
+
+        regular_polygon_marker_403cef5aa2f6b85161651480f7541f60.bindPopup(popup_9fda17c70261c66354469f558503ef69)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_30e9bbda94ffb99c6a9d6598163f0fcf = new L.RegularPolygonMarker(
+                [41.91180157228995, -87.62683395620526],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.121000000000002,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_821f3d4b79a50c5ff9f27a89a0b37165 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9017feed4ba7caaa08a27c3aa6bc68d1 = $(`<div id="html_9017feed4ba7caaa08a27c3aa6bc68d1" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & North Blvd</b><br>Season: Autumn<br>Trips: 11121</div>`)[0];
+                popup_821f3d4b79a50c5ff9f27a89a0b37165.setContent(html_9017feed4ba7caaa08a27c3aa6bc68d1);
+            
+        
+
+        regular_polygon_marker_30e9bbda94ffb99c6a9d6598163f0fcf.bindPopup(popup_821f3d4b79a50c5ff9f27a89a0b37165)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_810daa494bc5e8e772e597d6008af517 = new L.RegularPolygonMarker(
+                [41.880970762426806, -87.62408500858558],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.102,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_dbda08081d1b627a8da129462a1dc2c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dcb8dfb7de3a51f578010b1ac063fda3 = $(`<div id="html_dcb8dfb7de3a51f578010b1ac063fda3" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Autumn<br>Trips: 11102</div>`)[0];
+                popup_dbda08081d1b627a8da129462a1dc2c2.setContent(html_dcb8dfb7de3a51f578010b1ac063fda3);
+            
+        
+
+        regular_polygon_marker_810daa494bc5e8e772e597d6008af517.bindPopup(popup_dbda08081d1b627a8da129462a1dc2c2)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4460f73900e697773f9c3afeb0ed2116 = new L.RegularPolygonMarker(
+                [41.9032955590055, -87.6345718720419],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 16.985,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_914779d250dda6343378728a08d45a02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c824ac417a8f34d3629c6ea62049f4eb = $(`<div id="html_c824ac417a8f34d3629c6ea62049f4eb" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Autumn<br>Trips: 10985</div>`)[0];
+                popup_914779d250dda6343378728a08d45a02.setContent(html_c824ac417a8f34d3629c6ea62049f4eb);
+            
+        
+
+        regular_polygon_marker_4460f73900e697773f9c3afeb0ed2116.bindPopup(popup_914779d250dda6343378728a08d45a02)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_220759868c81556c1df56ed7a02a3995 = new L.RegularPolygonMarker(
+                [41.90110098330327, -87.62371776138832],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 16.7,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_d62b8bf137dd01cd10322194d4c8fb56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3765d6abf48faba49c1ff1d4623eb47 = $(`<div id="html_e3765d6abf48faba49c1ff1d4623eb47" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Autumn<br>Trips: 10700</div>`)[0];
+                popup_d62b8bf137dd01cd10322194d4c8fb56.setContent(html_e3765d6abf48faba49c1ff1d4623eb47);
+            
+        
+
+        regular_polygon_marker_220759868c81556c1df56ed7a02a3995.bindPopup(popup_d62b8bf137dd01cd10322194d4c8fb56)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4bbd7426fa1abcc3a28a1e56ed80214d = new L.RegularPolygonMarker(
+                [41.88914676540781, -87.63869608232493],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 16.286,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_6fa54a0fc24f632cb77eb7d60933bdc6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4007de9c708556fcbf37eb0802bb935e = $(`<div id="html_4007de9c708556fcbf37eb0802bb935e" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Autumn<br>Trips: 10286</div>`)[0];
+                popup_6fa54a0fc24f632cb77eb7d60933bdc6.setContent(html_4007de9c708556fcbf37eb0802bb935e);
+            
+        
+
+        regular_polygon_marker_4bbd7426fa1abcc3a28a1e56ed80214d.bindPopup(popup_6fa54a0fc24f632cb77eb7d60933bdc6)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f5ad140fe02eda5417c60ea7ec846360 = new L.RegularPolygonMarker(
+                [41.78518105496031, -87.6009649706797],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 16.085,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_7f828cb9ef0148b4349c2b19cf3aca3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2eca323f496150da35a938b42312d455 = $(`<div id="html_2eca323f496150da35a938b42312d455" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>Season: Autumn<br>Trips: 10085</div>`)[0];
+                popup_7f828cb9ef0148b4349c2b19cf3aca3b.setContent(html_2eca323f496150da35a938b42312d455);
+            
+        
+
+        regular_polygon_marker_f5ad140fe02eda5417c60ea7ec846360.bindPopup(popup_7f828cb9ef0148b4349c2b19cf3aca3b)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4ffb7e96d32d9831866e7cac271eef2d = new L.RegularPolygonMarker(
+                [41.8811142602675, -87.61677622950603],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 16.038,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1015675f865eeeada6fdd4711c5f2e02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22a39e334c204f9ec6a9c0498c970f84 = $(`<div id="html_22a39e334c204f9ec6a9c0498c970f84" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & Monroe St</b><br>Season: Autumn<br>Trips: 10038</div>`)[0];
+                popup_1015675f865eeeada6fdd4711c5f2e02.setContent(html_22a39e334c204f9ec6a9c0498c970f84);
+            
+        
+
+        regular_polygon_marker_4ffb7e96d32d9831866e7cac271eef2d.bindPopup(popup_1015675f865eeeada6fdd4711c5f2e02)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_562f8a89d9a028402fbcaee024e72bc0 = new L.RegularPolygonMarker(
+                [41.89434255786771, -87.62286505198051],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.498,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_8c5902d0e098d78d3e4914c2d91f4614 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b021e47f114cd1292811159c0c5a4e06 = $(`<div id="html_b021e47f114cd1292811159c0c5a4e06" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Autumn<br>Trips: 9498</div>`)[0];
+                popup_8c5902d0e098d78d3e4914c2d91f4614.setContent(html_b021e47f114cd1292811159c0c5a4e06);
+            
+        
+
+        regular_polygon_marker_562f8a89d9a028402fbcaee024e72bc0.bindPopup(popup_8c5902d0e098d78d3e4914c2d91f4614)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_0ca7b86123b512e05b5e92fdd931560e = new L.RegularPolygonMarker(
+                [41.9377330282034, -87.64402108283947],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.323,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_54a78bb2100adbb430445917f1efc26c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f58a077a712153c7b353747a732a3d6d = $(`<div id="html_f58a077a712153c7b353747a732a3d6d" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Autumn<br>Trips: 9323</div>`)[0];
+                popup_54a78bb2100adbb430445917f1efc26c.setContent(html_f58a077a712153c7b353747a732a3d6d);
+            
+        
+
+        regular_polygon_marker_0ca7b86123b512e05b5e92fdd931560e.bindPopup(popup_54a78bb2100adbb430445917f1efc26c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4877b501a4782df6f8c2e739a9a710e5 = new L.RegularPolygonMarker(
+                [41.894234789828474, -87.62918701592716],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.297,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_90d9fdd8050353d5df423f0be4f8553b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_115a470f10e2ec65747f7296e040eb1c = $(`<div id="html_115a470f10e2ec65747f7296e040eb1c" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Autumn<br>Trips: 9297</div>`)[0];
+                popup_90d9fdd8050353d5df423f0be4f8553b.setContent(html_115a470f10e2ec65747f7296e040eb1c);
+            
+        
+
+        regular_polygon_marker_4877b501a4782df6f8c2e739a9a710e5.bindPopup(popup_90d9fdd8050353d5df423f0be4f8553b)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_2968e749b65da7da84a8480aa381a7f6 = new L.RegularPolygonMarker(
+                [41.894914062504604, -87.63428336273566],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.266,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_c1505bb8e7e2b80905034a619f704b4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13cd976e01045bdaf0ef429853bf5ad0 = $(`<div id="html_13cd976e01045bdaf0ef429853bf5ad0" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Autumn<br>Trips: 9266</div>`)[0];
+                popup_c1505bb8e7e2b80905034a619f704b4f.setContent(html_13cd976e01045bdaf0ef429853bf5ad0);
+            
+        
+
+        regular_polygon_marker_2968e749b65da7da84a8480aa381a7f6.bindPopup(popup_c1505bb8e7e2b80905034a619f704b4f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a2901dccf8af6d0f903486180fa840f0 = new L.RegularPolygonMarker(
+                [41.91836443302118, -87.63619107844723],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.258,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_f469e872208ae22813592b98c97af6c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02c35a523feabdd096b93262a8b20b30 = $(`<div id="html_02c35a523feabdd096b93262a8b20b30" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Autumn<br>Trips: 9258</div>`)[0];
+                popup_f469e872208ae22813592b98c97af6c4.setContent(html_02c35a523feabdd096b93262a8b20b30);
+            
+        
+
+        regular_polygon_marker_a2901dccf8af6d0f903486180fa840f0.bindPopup(popup_f469e872208ae22813592b98c97af6c4)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a7c3b49a3ccf8f566e5b804ad0d65846 = new L.RegularPolygonMarker(
+                [41.79161454282048, -87.59986048694998],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.227,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ea9761ed55fbabbfee3c8f60f5a27e37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47a62f6a6f64684f969c43f3d70a8b27 = $(`<div id="html_47a62f6a6f64684f969c43f3d70a8b27" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>Season: Autumn<br>Trips: 9227</div>`)[0];
+                popup_ea9761ed55fbabbfee3c8f60f5a27e37.setContent(html_47a62f6a6f64684f969c43f3d70a8b27);
+            
+        
+
+        regular_polygon_marker_a7c3b49a3ccf8f566e5b804ad0d65846.bindPopup(popup_ea9761ed55fbabbfee3c8f60f5a27e37)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_0eb4bea8c5cc0794d2a6c5df7a963710 = new L.RegularPolygonMarker(
+                [41.89152333673228, -87.6267604846851],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.142,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_d2687dd8d15ed7e17a22f0edb83b2a39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05d8caadccb3488e3e47af8de8c66728 = $(`<div id="html_05d8caadccb3488e3e47af8de8c66728" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Autumn<br>Trips: 9142</div>`)[0];
+                popup_d2687dd8d15ed7e17a22f0edb83b2a39.setContent(html_05d8caadccb3488e3e47af8de8c66728);
+            
+        
+
+        regular_polygon_marker_0eb4bea8c5cc0794d2a6c5df7a963710.bindPopup(popup_d2687dd8d15ed7e17a22f0edb83b2a39)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_97e4665e1e05db1b1157e29ad7192f5b = new L.RegularPolygonMarker(
+                [41.915889395267214, -87.63466789739346],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.997,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1fc8f65a409f76379641633e61ba6a94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d20952c3530a6e3b009eca723e1265f = $(`<div id="html_2d20952c3530a6e3b009eca723e1265f" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Autumn<br>Trips: 8997</div>`)[0];
+                popup_1fc8f65a409f76379641633e61ba6a94.setContent(html_2d20952c3530a6e3b009eca723e1265f);
+            
+        
+
+        regular_polygon_marker_97e4665e1e05db1b1157e29ad7192f5b.bindPopup(popup_1fc8f65a409f76379641633e61ba6a94)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_6de39e6bc91f8bd5b6b88c442bc06b9d = new L.RegularPolygonMarker(
+                [41.881869318451905, -87.64871292508829],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.856,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_914b74ecb2d0ed3566e9b311c8b73794 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e53a8e9b4edbc540f321d084aa182852 = $(`<div id="html_e53a8e9b4edbc540f321d084aa182852" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Autumn<br>Trips: 8856</div>`)[0];
+                popup_914b74ecb2d0ed3566e9b311c8b73794.setContent(html_e53a8e9b4edbc540f321d084aa182852);
+            
+        
+
+        regular_polygon_marker_6de39e6bc91f8bd5b6b88c442bc06b9d.bindPopup(popup_914b74ecb2d0ed3566e9b311c8b73794)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_17320f6f046f656317806c4ef9fe7f6b = new L.RegularPolygonMarker(
+                [41.940154260303764, -87.65295939051016],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.607,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_7e8bf066cf4bf96038a4fdd791b0d72d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c8c6777a6d1c872c62a53d5c0bc68db = $(`<div id="html_1c8c6777a6d1c872c62a53d5c0bc68db" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Season: Autumn<br>Trips: 8607</div>`)[0];
+                popup_7e8bf066cf4bf96038a4fdd791b0d72d.setContent(html_1c8c6777a6d1c872c62a53d5c0bc68db);
+            
+        
+
+        regular_polygon_marker_17320f6f046f656317806c4ef9fe7f6b.bindPopup(popup_7e8bf066cf4bf96038a4fdd791b0d72d)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_fe62849940df8dc3b806bbae198be310 = new L.RegularPolygonMarker(
+                [41.882063650024065, -87.64109808098036],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.345,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a7ca8e839443a440e6322d87846978e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5be1450eb0892f88b33071521445b904 = $(`<div id="html_5be1450eb0892f88b33071521445b904" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>Season: Autumn<br>Trips: 8345</div>`)[0];
+                popup_a7ca8e839443a440e6322d87846978e0.setContent(html_5be1450eb0892f88b33071521445b904);
+            
+        
+
+        regular_polygon_marker_fe62849940df8dc3b806bbae198be310.bindPopup(popup_a7ca8e839443a440e6322d87846978e0)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c748ff65de976ec70daf33c9a2a85787 = new L.RegularPolygonMarker(
+                [41.926370814926, -87.63081299482026],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.163,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_20e1e917b16cf9fee16ca97db7fadce7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f97e4dbc777ba2732f726afe5ee962c8 = $(`<div id="html_f97e4dbc777ba2732f726afe5ee962c8" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Autumn<br>Trips: 8163</div>`)[0];
+                popup_20e1e917b16cf9fee16ca97db7fadce7.setContent(html_f97e4dbc777ba2732f726afe5ee962c8);
+            
+        
+
+        regular_polygon_marker_c748ff65de976ec70daf33c9a2a85787.bindPopup(popup_20e1e917b16cf9fee16ca97db7fadce7)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5f7662645580f3e2464c101b6b29f760 = new L.RegularPolygonMarker(
+                [41.89096564348505, -87.61834498253475],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.061,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_cb740155b17fda27a4a8d7e407fac13e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a5a060d81f69d4ff272589002af3cc1 = $(`<div id="html_5a5a060d81f69d4ff272589002af3cc1" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Autumn<br>Trips: 8061</div>`)[0];
+                popup_cb740155b17fda27a4a8d7e407fac13e.setContent(html_5a5a060d81f69d4ff272589002af3cc1);
+            
+        
+
+        regular_polygon_marker_5f7662645580f3e2464c101b6b29f760.bindPopup(popup_cb740155b17fda27a4a8d7e407fac13e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_423279f76e1d92304e5c007f029a528b = new L.RegularPolygonMarker(
+                [41.903519292352755, -87.66794373999619],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.06,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_5bd558daabaf143fb86627d6569c4842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e8d9759982688457059cbfe2d0cdc86 = $(`<div id="html_2e8d9759982688457059cbfe2d0cdc86" style="width: 100.0%; height: 100.0%;"><b>Ashland Ave & Division St</b><br>Season: Autumn<br>Trips: 8060</div>`)[0];
+                popup_5bd558daabaf143fb86627d6569c4842.setContent(html_2e8d9759982688457059cbfe2d0cdc86);
+            
+        
+
+        regular_polygon_marker_423279f76e1d92304e5c007f029a528b.bindPopup(popup_5bd558daabaf143fb86627d6569c4842)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_1fc4a5c71dabc2fbdbd5c37256b6ce8c = new L.RegularPolygonMarker(
+                [41.92953465613149, -87.64293006498839],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.005,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_b5ff560440aea9ddf4b131f216591062 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30f3ae0f748ec1e39a10e9e126c06103 = $(`<div id="html_30f3ae0f748ec1e39a10e9e126c06103" style="width: 100.0%; height: 100.0%;"><b>Clark St & Wrightwood Ave</b><br>Season: Autumn<br>Trips: 8005</div>`)[0];
+                popup_b5ff560440aea9ddf4b131f216591062.setContent(html_30f3ae0f748ec1e39a10e9e126c06103);
+            
+        
+
+        regular_polygon_marker_1fc4a5c71dabc2fbdbd5c37256b6ce8c.bindPopup(popup_b5ff560440aea9ddf4b131f216591062)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_eca62556f02650c47683775a87c19cc6 = new L.RegularPolygonMarker(
+                [41.92199721514073, -87.6440993487828],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.821,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_352801727cc66fd6d6c5c21b2c86dd5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e5ed4873964c36ba0e1ffe87fe572ef = $(`<div id="html_5e5ed4873964c36ba0e1ffe87fe572ef" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Autumn<br>Trips: 7821</div>`)[0];
+                popup_352801727cc66fd6d6c5c21b2c86dd5f.setContent(html_5e5ed4873964c36ba0e1ffe87fe572ef);
+            
+        
+
+        regular_polygon_marker_eca62556f02650c47683775a87c19cc6.bindPopup(popup_352801727cc66fd6d6c5c21b2c86dd5f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_93630a4299e8818059a7d071e4908407 = new L.RegularPolygonMarker(
+                [41.90691180225289, -87.63488195451542],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.712,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_e90ea5588e18ab6325994f96768084c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c5f85f50dc7137bf45abbda888d6a45 = $(`<div id="html_6c5f85f50dc7137bf45abbda888d6a45" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Autumn<br>Trips: 7712</div>`)[0];
+                popup_e90ea5588e18ab6325994f96768084c3.setContent(html_6c5f85f50dc7137bf45abbda888d6a45);
+            
+        
+
+        regular_polygon_marker_93630a4299e8818059a7d071e4908407.bindPopup(popup_e90ea5588e18ab6325994f96768084c3)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_11f80b8173abbad0a0aa64d435b7a488 = new L.RegularPolygonMarker(
+                [41.89092121956049, -87.63159050541822],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.695,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1a08c493c027c39dad8bfb37204a18c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_169070bb12d41ad74bbc8773a1ddeb1e = $(`<div id="html_169070bb12d41ad74bbc8773a1ddeb1e" style="width: 100.0%; height: 100.0%;"><b>LaSalle St & Illinois St</b><br>Season: Autumn<br>Trips: 7695</div>`)[0];
+                popup_1a08c493c027c39dad8bfb37204a18c7.setContent(html_169070bb12d41ad74bbc8773a1ddeb1e);
+            
+        
+
+        regular_polygon_marker_11f80b8173abbad0a0aa64d435b7a488.bindPopup(popup_1a08c493c027c39dad8bfb37204a18c7)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_13a4f3368de7eed98b309a3938975408 = new L.RegularPolygonMarker(
+                [41.92572840750336, -87.653887241629],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.541,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_df909299cb124b59257cf4f857b70c26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bee335663c67ed572eb45de380a5fa3b = $(`<div id="html_bee335663c67ed572eb45de380a5fa3b" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Fullerton Ave</b><br>Season: Autumn<br>Trips: 7541</div>`)[0];
+                popup_df909299cb124b59257cf4f857b70c26.setContent(html_bee335663c67ed572eb45de380a5fa3b);
+            
+        
+
+        regular_polygon_marker_13a4f3368de7eed98b309a3938975408.bindPopup(popup_df909299cb124b59257cf4f857b70c26)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_1c064a33c97880d1f5dfe93efdf2bef5 = new L.RegularPolygonMarker(
+                [41.86786154791771, -87.62307054198591],
+                {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.417,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_c6497b7d1e39e29004cf84b1e3fb7feb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_354e099f21057b97f26af8203d383ca7 = $(`<div id="html_354e099f21057b97f26af8203d383ca7" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Autumn<br>Trips: 7417</div>`)[0];
+                popup_c6497b7d1e39e29004cf84b1e3fb7feb.setContent(html_354e099f21057b97f26af8203d383ca7);
+            
+        
+
+        regular_polygon_marker_1c064a33c97880d1f5dfe93efdf2bef5.bindPopup(popup_c6497b7d1e39e29004cf84b1e3fb7feb)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_79944a9570689b7adb95cf5a58b168e7 = new L.RegularPolygonMarker(
+                [41.892177438009746, -87.612096253033],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 22.034,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ae18455eec6aaa67496589e4d2a86823 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64db02d1ef52025e6f4f90682d2f3286 = $(`<div id="html_64db02d1ef52025e6f4f90682d2f3286" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Spring<br>Trips: 16034</div>`)[0];
+                popup_ae18455eec6aaa67496589e4d2a86823.setContent(html_64db02d1ef52025e6f4f90682d2f3286);
+            
+        
+
+        regular_polygon_marker_79944a9570689b7adb95cf5a58b168e7.bindPopup(popup_ae18455eec6aaa67496589e4d2a86823)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f4e6611079165ad7f8fbc8f11b1537f9 = new L.RegularPolygonMarker(
+                [41.88108421058499, -87.61659312061288],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.762,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_6b3029669015fd22b254bcc3223d9c92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c657eaded80e3b00000914fac61b953 = $(`<div id="html_4c657eaded80e3b00000914fac61b953" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & Monroe St</b><br>Season: Spring<br>Trips: 11762</div>`)[0];
+                popup_6b3029669015fd22b254bcc3223d9c92.setContent(html_4c657eaded80e3b00000914fac61b953);
+            
+        
+
+        regular_polygon_marker_f4e6611079165ad7f8fbc8f11b1537f9.bindPopup(popup_6b3029669015fd22b254bcc3223d9c92)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_80b9d6e2ed9aa0943ee49757471fcd09 = new L.RegularPolygonMarker(
+                [41.88114310699281, -87.62412485099698],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.627,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_9d86f6c3c97fa2640787992707e30276 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be80a2b6defbb96afb74cb7149fdbbe5 = $(`<div id="html_be80a2b6defbb96afb74cb7149fdbbe5" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Spring<br>Trips: 9627</div>`)[0];
+                popup_9d86f6c3c97fa2640787992707e30276.setContent(html_be80a2b6defbb96afb74cb7149fdbbe5);
+            
+        
+
+        regular_polygon_marker_80b9d6e2ed9aa0943ee49757471fcd09.bindPopup(popup_9d86f6c3c97fa2640787992707e30276)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_1eb865437f6648d05646ae84d421379c = new L.RegularPolygonMarker(
+                [41.90110265366478, -87.6237496175261],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 15.236,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1d6c7e712d7ce180a8d1b772ba8ffa41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d01ae22ba530d7bcb57e5532eccc88f = $(`<div id="html_0d01ae22ba530d7bcb57e5532eccc88f" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Spring<br>Trips: 9236</div>`)[0];
+                popup_1d6c7e712d7ce180a8d1b772ba8ffa41.setContent(html_0d01ae22ba530d7bcb57e5532eccc88f);
+            
+        
+
+        regular_polygon_marker_1eb865437f6648d05646ae84d421379c.bindPopup(popup_1d6c7e712d7ce180a8d1b772ba8ffa41)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_9ebb7379145c53b2be496cb210f4312f = new L.RegularPolygonMarker(
+                [41.91215014975301, -87.63476805390665],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.451,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ac9a214a63a6b84cd8a35f049ecf6554 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5e237edaee79515fb5fbf2a8b1d890e = $(`<div id="html_b5e237edaee79515fb5fbf2a8b1d890e" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Spring<br>Trips: 8451</div>`)[0];
+                popup_ac9a214a63a6b84cd8a35f049ecf6554.setContent(html_b5e237edaee79515fb5fbf2a8b1d890e);
+            
+        
+
+        regular_polygon_marker_9ebb7379145c53b2be496cb210f4312f.bindPopup(popup_ac9a214a63a6b84cd8a35f049ecf6554)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_90e66ac4b30f5b9dc7afb062f0c4e529 = new L.RegularPolygonMarker(
+                [41.902838142877016, -87.63137032931044],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.433,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_0ded35bc89aca690ff7c059bd778a609 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdd1fd6b5db7bc228292ab691b3ff8bc = $(`<div id="html_cdd1fd6b5db7bc228292ab691b3ff8bc" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Spring<br>Trips: 8433</div>`)[0];
+                popup_0ded35bc89aca690ff7c059bd778a609.setContent(html_cdd1fd6b5db7bc228292ab691b3ff8bc);
+            
+        
+
+        regular_polygon_marker_90e66ac4b30f5b9dc7afb062f0c4e529.bindPopup(popup_0ded35bc89aca690ff7c059bd778a609)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_0618432249c071f617bbd961be3e31d9 = new L.RegularPolygonMarker(
+                [41.91172264857504, -87.62661849156675],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.28,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_0208dbbe5e61c724ba598df70da741a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e95f956178988fb0ab2af44494ebc77 = $(`<div id="html_9e95f956178988fb0ab2af44494ebc77" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & North Blvd</b><br>Season: Spring<br>Trips: 8280</div>`)[0];
+                popup_0208dbbe5e61c724ba598df70da741a8.setContent(html_9e95f956178988fb0ab2af44494ebc77);
+            
+        
+
+        regular_polygon_marker_0618432249c071f617bbd961be3e31d9.bindPopup(popup_0208dbbe5e61c724ba598df70da741a8)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_ae534c06cc6de9e42e0b3f62fe653b4c = new L.RegularPolygonMarker(
+                [41.926244725137245, -87.63071144629073],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 14.225,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_e2e9debbf96ff466a3911c4a1fd4ff65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_083057ac6e256231d4f249c19122979a = $(`<div id="html_083057ac6e256231d4f249c19122979a" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Spring<br>Trips: 8225</div>`)[0];
+                popup_e2e9debbf96ff466a3911c4a1fd4ff65.setContent(html_083057ac6e256231d4f249c19122979a);
+            
+        
+
+        regular_polygon_marker_ae534c06cc6de9e42e0b3f62fe653b4c.bindPopup(popup_e2e9debbf96ff466a3911c4a1fd4ff65)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_b32bdbcc2899c0ce701e0f5144283538 = new L.RegularPolygonMarker(
+                [41.90328864328101, -87.63429650012897],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.407,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_db4bb65012853c23b4baa0fedcdc6e49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64dd92a9263a76ea8bf5d75ed1a48bc5 = $(`<div id="html_64dd92a9263a76ea8bf5d75ed1a48bc5" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Spring<br>Trips: 7407</div>`)[0];
+                popup_db4bb65012853c23b4baa0fedcdc6e49.setContent(html_64dd92a9263a76ea8bf5d75ed1a48bc5);
+            
+        
+
+        regular_polygon_marker_b32bdbcc2899c0ce701e0f5144283538.bindPopup(popup_db4bb65012853c23b4baa0fedcdc6e49)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_6909a27b11345d1b590df472ed15d6ac = new L.RegularPolygonMarker(
+                [41.89137010887664, -87.62666859003139],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.238,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a9f824af82c91875925e864a0cd97cf0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b5fe552dc6bfa26f7f989f3907d9859 = $(`<div id="html_1b5fe552dc6bfa26f7f989f3907d9859" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Spring<br>Trips: 7238</div>`)[0];
+                popup_a9f824af82c91875925e864a0cd97cf0.setContent(html_1b5fe552dc6bfa26f7f989f3907d9859);
+            
+        
+
+        regular_polygon_marker_6909a27b11345d1b590df472ed15d6ac.bindPopup(popup_a9f824af82c91875925e864a0cd97cf0)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_b985b8198b695eb19cb2e460677b5fb2 = new L.RegularPolygonMarker(
+                [41.89395284369604, -87.62916959336862],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.099,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_20a082d832d8b96580ecdd9f5b6acfd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_325ffb87ab6be27c5d0b8a87ac2b9e00 = $(`<div id="html_325ffb87ab6be27c5d0b8a87ac2b9e00" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Spring<br>Trips: 7099</div>`)[0];
+                popup_20a082d832d8b96580ecdd9f5b6acfd0.setContent(html_325ffb87ab6be27c5d0b8a87ac2b9e00);
+            
+        
+
+        regular_polygon_marker_b985b8198b695eb19cb2e460677b5fb2.bindPopup(popup_20a082d832d8b96580ecdd9f5b6acfd0)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_17b833f608ee4eba53857d9c45237839 = new L.RegularPolygonMarker(
+                [41.867749672626786, -87.62319568016316],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 13.026,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a72d8d24fbd3997afb729db60a3613b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_202037f44f277eb4578d827da448db10 = $(`<div id="html_202037f44f277eb4578d827da448db10" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Spring<br>Trips: 7026</div>`)[0];
+                popup_a72d8d24fbd3997afb729db60a3613b9.setContent(html_202037f44f277eb4578d827da448db10);
+            
+        
+
+        regular_polygon_marker_17b833f608ee4eba53857d9c45237839.bindPopup(popup_a72d8d24fbd3997afb729db60a3613b9)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f7496b9d779e17265182293dbaea45f7 = new L.RegularPolygonMarker(
+                [41.91568927748334, -87.63466021682241],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.687000000000001,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_43d88d00e18826f17cfae55cf8a1ddf1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_460658c96d4f63c203e5f33ea7a1d9ce = $(`<div id="html_460658c96d4f63c203e5f33ea7a1d9ce" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Spring<br>Trips: 6687</div>`)[0];
+                popup_43d88d00e18826f17cfae55cf8a1ddf1.setContent(html_460658c96d4f63c203e5f33ea7a1d9ce);
+            
+        
+
+        regular_polygon_marker_f7496b9d779e17265182293dbaea45f7.bindPopup(popup_43d88d00e18826f17cfae55cf8a1ddf1)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a6170078f113f001a0bb6f3153bd5ec4 = new L.RegularPolygonMarker(
+                [41.918180985921474, -87.63615543366491],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.527999999999999,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_252d93fcf21a3eee0c2267e30d11b0dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23dfb338739682157903b2a4d13b809a = $(`<div id="html_23dfb338739682157903b2a4d13b809a" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Spring<br>Trips: 6528</div>`)[0];
+                popup_252d93fcf21a3eee0c2267e30d11b0dc.setContent(html_23dfb338739682157903b2a4d13b809a);
+            
+        
+
+        regular_polygon_marker_a6170078f113f001a0bb6f3153bd5ec4.bindPopup(popup_252d93fcf21a3eee0c2267e30d11b0dc)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_3930bc304a2e307d95429c25e769fdfc = new L.RegularPolygonMarker(
+                [41.88921788694734, -87.63855733287363],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.336,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_d64cd73214fdbb6a7e0fe6bbf82b72c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9628c27ab9962ae3d52f8f1caa1afbd = $(`<div id="html_d9628c27ab9962ae3d52f8f1caa1afbd" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Spring<br>Trips: 6336</div>`)[0];
+                popup_d64cd73214fdbb6a7e0fe6bbf82b72c3.setContent(html_d9628c27ab9962ae3d52f8f1caa1afbd);
+            
+        
+
+        regular_polygon_marker_3930bc304a2e307d95429c25e769fdfc.bindPopup(popup_d64cd73214fdbb6a7e0fe6bbf82b72c3)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_61d2a40ef82a46679e31349a5f56caa2 = new L.RegularPolygonMarker(
+                [41.93768412699396, -87.64411527484016],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.27,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_81014e8a63b155ecfbd41c8e0865698d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_586cb111f8e6e7072e442cb0e3c5e023 = $(`<div id="html_586cb111f8e6e7072e442cb0e3c5e023" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Spring<br>Trips: 6270</div>`)[0];
+                popup_81014e8a63b155ecfbd41c8e0865698d.setContent(html_586cb111f8e6e7072e442cb0e3c5e023);
+            
+        
+
+        regular_polygon_marker_61d2a40ef82a46679e31349a5f56caa2.bindPopup(popup_81014e8a63b155ecfbd41c8e0865698d)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c3e447e02bd7e3cc26d9255887ffabb0 = new L.RegularPolygonMarker(
+                [41.89422203572682, -87.6227796846033],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.201,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_d731edbd9a773f77ee9b1a9a61dd6a8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a65425cc715a0ab75558354ad52bc73 = $(`<div id="html_1a65425cc715a0ab75558354ad52bc73" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Spring<br>Trips: 6201</div>`)[0];
+                popup_d731edbd9a773f77ee9b1a9a61dd6a8b.setContent(html_1a65425cc715a0ab75558354ad52bc73);
+            
+        
+
+        regular_polygon_marker_c3e447e02bd7e3cc26d9255887ffabb0.bindPopup(popup_d731edbd9a773f77ee9b1a9a61dd6a8b)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_9810198168246e7976e2ba3fd54b25f5 = new L.RegularPolygonMarker(
+                [41.89465319993052, -87.63438977154688],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 12.104,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_b7714c648ec4dc6752df1de10ba2d39f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_341aa0d17b2d6257ec9c2384db008b60 = $(`<div id="html_341aa0d17b2d6257ec9c2384db008b60" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Spring<br>Trips: 6104</div>`)[0];
+                popup_b7714c648ec4dc6752df1de10ba2d39f.setContent(html_341aa0d17b2d6257ec9c2384db008b60);
+            
+        
+
+        regular_polygon_marker_9810198168246e7976e2ba3fd54b25f5.bindPopup(popup_b7714c648ec4dc6752df1de10ba2d39f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c0060feb84ea972830bf3da6c5179aa6 = new L.RegularPolygonMarker(
+                [41.88587678268011, -87.62408088457762],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.96,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_e3930dd14ce4c96b553f2e9772fdc36c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22952b98edc2053cdb7056cc9050a1df = $(`<div id="html_22952b98edc2053cdb7056cc9050a1df" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Lake St</b><br>Season: Spring<br>Trips: 5960</div>`)[0];
+                popup_e3930dd14ce4c96b553f2e9772fdc36c.setContent(html_22952b98edc2053cdb7056cc9050a1df);
+            
+        
+
+        regular_polygon_marker_c0060feb84ea972830bf3da6c5179aa6.bindPopup(popup_e3930dd14ce4c96b553f2e9772fdc36c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4bdd933f3e81edc17eadcef8173b7391 = new L.RegularPolygonMarker(
+                [41.92201450578763, -87.64422701345082],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.952,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ad732911a925ab0e782fa59386d3618f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3c3a5ddd4becb4067e0d99684838ca4 = $(`<div id="html_a3c3a5ddd4becb4067e0d99684838ca4" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Spring<br>Trips: 5952</div>`)[0];
+                popup_ad732911a925ab0e782fa59386d3618f.setContent(html_a3c3a5ddd4becb4067e0d99684838ca4);
+            
+        
+
+        regular_polygon_marker_4bdd933f3e81edc17eadcef8173b7391.bindPopup(popup_ad732911a925ab0e782fa59386d3618f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_41f5848c06c959a8e6da7f171648a68f = new L.RegularPolygonMarker(
+                [41.89206486625247, -87.6208010735877],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.876000000000001,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a3251ffd8e247bbdd38f6ccb4c2cb714 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9c3c68c36326e0b0302b8dea1169ecb = $(`<div id="html_a9c3c68c36326e0b0302b8dea1169ecb" style="width: 100.0%; height: 100.0%;"><b>Fairbanks Ct & Grand Ave</b><br>Season: Spring<br>Trips: 5876</div>`)[0];
+                popup_a3251ffd8e247bbdd38f6ccb4c2cb714.setContent(html_a9c3c68c36326e0b0302b8dea1169ecb);
+            
+        
+
+        regular_polygon_marker_41f5848c06c959a8e6da7f171648a68f.bindPopup(popup_a3251ffd8e247bbdd38f6ccb4c2cb714)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_60da83e7c28236f409d604e19838bc11 = new L.RegularPolygonMarker(
+                [41.88397685672483, -87.62469525635663],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.763,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_c932fd6410ee13bbcaf15f88bc696160 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d10d9484bcb32f0b54794bce252fe53d = $(`<div id="html_d10d9484bcb32f0b54794bce252fe53d" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>Season: Spring<br>Trips: 5763</div>`)[0];
+                popup_c932fd6410ee13bbcaf15f88bc696160.setContent(html_d10d9484bcb32f0b54794bce252fe53d);
+            
+        
+
+        regular_polygon_marker_60da83e7c28236f409d604e19838bc11.bindPopup(popup_c932fd6410ee13bbcaf15f88bc696160)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5a1449553948951ce5ed22ee95353f7a = new L.RegularPolygonMarker(
+                [41.89064480808907, -87.61850310572069],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.734,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_529dd380dc4d03a4305e81bb15ca879d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fd203499dac137b1a854960fb92a50a = $(`<div id="html_4fd203499dac137b1a854960fb92a50a" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Spring<br>Trips: 5734</div>`)[0];
+                popup_529dd380dc4d03a4305e81bb15ca879d.setContent(html_4fd203499dac137b1a854960fb92a50a);
+            
+        
+
+        regular_polygon_marker_5a1449553948951ce5ed22ee95353f7a.bindPopup(popup_529dd380dc4d03a4305e81bb15ca879d)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_3bfa85877dd28df3069edb861b787469 = new L.RegularPolygonMarker(
+                [41.867032652366305, -87.61529855978864],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.714,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_162ff38c65135a878856982f8dbd66bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6a3b9ee6bf92d5493dfa665fc393f26 = $(`<div id="html_c6a3b9ee6bf92d5493dfa665fc393f26" style="width: 100.0%; height: 100.0%;"><b>Shedd Aquarium</b><br>Season: Spring<br>Trips: 5714</div>`)[0];
+                popup_162ff38c65135a878856982f8dbd66bc.setContent(html_c6a3b9ee6bf92d5493dfa665fc393f26);
+            
+        
+
+        regular_polygon_marker_3bfa85877dd28df3069edb861b787469.bindPopup(popup_162ff38c65135a878856982f8dbd66bc)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e27f38bdd77423c3ec1945f8160dec7f = new L.RegularPolygonMarker(
+                [41.906826795594554, -87.63501713334173],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.683,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_dd245e037839ab9dbedd8bec504cf1a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8f1837d5c612ccfbdf38489ab4fd868 = $(`<div id="html_a8f1837d5c612ccfbdf38489ab4fd868" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Spring<br>Trips: 5683</div>`)[0];
+                popup_dd245e037839ab9dbedd8bec504cf1a0.setContent(html_a8f1837d5c612ccfbdf38489ab4fd868);
+            
+        
+
+        regular_polygon_marker_e27f38bdd77423c3ec1945f8160dec7f.bindPopup(popup_dd245e037839ab9dbedd8bec504cf1a0)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_061499988bef8848e493554684925b70 = new L.RegularPolygonMarker(
+                [41.94927645372894, -87.6545225499791],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.497,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_3405cb92a8e89079b890d5343f9cd817 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27ccee7dd730798cec9d18b2c23e9540 = $(`<div id="html_27ccee7dd730798cec9d18b2c23e9540" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Waveland Ave</b><br>Season: Spring<br>Trips: 5497</div>`)[0];
+                popup_3405cb92a8e89079b890d5343f9cd817.setContent(html_27ccee7dd730798cec9d18b2c23e9540);
+            
+        
+
+        regular_polygon_marker_061499988bef8848e493554684925b70.bindPopup(popup_3405cb92a8e89079b890d5343f9cd817)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_43612bcb35024fca5e26323f8a342abc = new L.RegularPolygonMarker(
+                [41.86736548898038, -87.62615912883713],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.311,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_6ee6acc77fccff8c9cc1b1a8cadbd1d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df0887941fb7a9a0cb7791f77d29e4ea = $(`<div id="html_df0887941fb7a9a0cb7791f77d29e4ea" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Roosevelt Rd</b><br>Season: Spring<br>Trips: 5311</div>`)[0];
+                popup_6ee6acc77fccff8c9cc1b1a8cadbd1d6.setContent(html_df0887941fb7a9a0cb7791f77d29e4ea);
+            
+        
+
+        regular_polygon_marker_43612bcb35024fca5e26323f8a342abc.bindPopup(popup_6ee6acc77fccff8c9cc1b1a8cadbd1d6)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c0fa259d4926b913e24529b8832caa10 = new L.RegularPolygonMarker(
+                [41.92585134429158, -87.64915459317947],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.277000000000001,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_7c1a5999fe78a70f6399744100c956b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ab73a49468dce90e4cb666316de27ee = $(`<div id="html_0ab73a49468dce90e4cb666316de27ee" style="width: 100.0%; height: 100.0%;"><b>Lincoln Ave & Fullerton Ave</b><br>Season: Spring<br>Trips: 5277</div>`)[0];
+                popup_7c1a5999fe78a70f6399744100c956b7.setContent(html_0ab73a49468dce90e4cb666316de27ee);
+            
+        
+
+        regular_polygon_marker_c0fa259d4926b913e24529b8832caa10.bindPopup(popup_7c1a5999fe78a70f6399744100c956b7)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4b8dbdc6c0615fdc3409ab5bc3b6fd5c = new L.RegularPolygonMarker(
+                [41.89911386494562, -87.62984869662802],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.267,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1a4ce31811825c4689976af573145b68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a1481698fe48c9e4ded7334bdbf1f8a = $(`<div id="html_6a1481698fe48c9e4ded7334bdbf1f8a" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>Season: Spring<br>Trips: 5267</div>`)[0];
+                popup_1a4ce31811825c4689976af573145b68.setContent(html_6a1481698fe48c9e4ded7334bdbf1f8a);
+            
+        
+
+        regular_polygon_marker_4b8dbdc6c0615fdc3409ab5bc3b6fd5c.bindPopup(popup_1a4ce31811825c4689976af573145b68)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_aea6b6a23fd1393ff38ee45ada3b52b0 = new L.RegularPolygonMarker(
+                [41.94004854629119, -87.65310267045604],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 11.231,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1a63be886f83317fa66e4c5cdc1f15e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e429bf4e68b5e069400bcc5d366d4ba0 = $(`<div id="html_e429bf4e68b5e069400bcc5d366d4ba0" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Season: Spring<br>Trips: 5231</div>`)[0];
+                popup_1a63be886f83317fa66e4c5cdc1f15e8.setContent(html_e429bf4e68b5e069400bcc5d366d4ba0);
+            
+        
+
+        regular_polygon_marker_aea6b6a23fd1393ff38ee45ada3b52b0.bindPopup(popup_1a63be886f83317fa66e4c5cdc1f15e8)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c75088f6fb5909c3c28f129cd3fc1766 = new L.RegularPolygonMarker(
+                [41.892186749065026, -87.61196142393158],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 51.55,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1c578008e0afce67ef600ce934cd57ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_760433f33dcbaa4b8abd121fb7389b12 = $(`<div id="html_760433f33dcbaa4b8abd121fb7389b12" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Summer<br>Trips: 45550</div>`)[0];
+                popup_1c578008e0afce67ef600ce934cd57ad.setContent(html_760433f33dcbaa4b8abd121fb7389b12);
+            
+        
+
+        regular_polygon_marker_c75088f6fb5909c3c28f129cd3fc1766.bindPopup(popup_1c578008e0afce67ef600ce934cd57ad)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_63a40f9c5da69ca201fd4721399a79d4 = new L.RegularPolygonMarker(
+                [41.90109965159481, -87.62358857755555],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 29.688,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_34c3ff470e6cbaeb156287dc753a9d80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_536cb2721a3354dc6fe8e5ec86bf207e = $(`<div id="html_536cb2721a3354dc6fe8e5ec86bf207e" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Oak St</b><br>Season: Summer<br>Trips: 23688</div>`)[0];
+                popup_34c3ff470e6cbaeb156287dc753a9d80.setContent(html_536cb2721a3354dc6fe8e5ec86bf207e);
+            
+        
+
+        regular_polygon_marker_63a40f9c5da69ca201fd4721399a79d4.bindPopup(popup_34c3ff470e6cbaeb156287dc753a9d80)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_101f8df12a187f9c1833244056af4403 = new L.RegularPolygonMarker(
+                [41.88093845895066, -87.62392048351181],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 26.355,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_b58244e4d371ca8c1980db8b158bc81f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61f0b91d8acd9ef99ce015d6ab216f05 = $(`<div id="html_61f0b91d8acd9ef99ce015d6ab216f05" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Summer<br>Trips: 20355</div>`)[0];
+                popup_b58244e4d371ca8c1980db8b158bc81f.setContent(html_61f0b91d8acd9ef99ce015d6ab216f05);
+            
+        
+
+        regular_polygon_marker_101f8df12a187f9c1833244056af4403.bindPopup(popup_b58244e4d371ca8c1980db8b158bc81f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e9f4beab323fb4d18b990cd634c12569 = new L.RegularPolygonMarker(
+                [41.91218862874455, -87.63475163063259],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 26.032,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_71f2e84037fb60bbeaa92acfbabdc789 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d408f0a82e250db16ff9f43c05c7f816 = $(`<div id="html_d408f0a82e250db16ff9f43c05c7f816" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Summer<br>Trips: 20032</div>`)[0];
+                popup_71f2e84037fb60bbeaa92acfbabdc789.setContent(html_d408f0a82e250db16ff9f43c05c7f816);
+            
+        
+
+        regular_polygon_marker_e9f4beab323fb4d18b990cd634c12569.bindPopup(popup_71f2e84037fb60bbeaa92acfbabdc789)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_77e2bae2f49c32bd42120f28d6074d1f = new L.RegularPolygonMarker(
+                [41.92621126381116, -87.63084217836762],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 25.889,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_e4f8719ec9791cb18b7e3e2bafa0907b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a30344a7b5e09eae0b3ed0e3596279f = $(`<div id="html_2a30344a7b5e09eae0b3ed0e3596279f" style="width: 100.0%; height: 100.0%;"><b>Theater on the Lake</b><br>Season: Summer<br>Trips: 19889</div>`)[0];
+                popup_e4f8719ec9791cb18b7e3e2bafa0907b.setContent(html_2a30344a7b5e09eae0b3ed0e3596279f);
+            
+        
+
+        regular_polygon_marker_77e2bae2f49c32bd42120f28d6074d1f.bindPopup(popup_e4f8719ec9791cb18b7e3e2bafa0907b)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_430caece55b30b312dc1f4cdc60d6d48 = new L.RegularPolygonMarker(
+                [41.911878455968086, -87.62685520074663],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 24.329,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_9a0e94c9852cc368d2cf68275755fbab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea558b0f3e1d0d7ef3eb7d679ce7fb6b = $(`<div id="html_ea558b0f3e1d0d7ef3eb7d679ce7fb6b" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & North Blvd</b><br>Season: Summer<br>Trips: 18329</div>`)[0];
+                popup_9a0e94c9852cc368d2cf68275755fbab.setContent(html_ea558b0f3e1d0d7ef3eb7d679ce7fb6b);
+            
+        
+
+        regular_polygon_marker_430caece55b30b312dc1f4cdc60d6d48.bindPopup(popup_9a0e94c9852cc368d2cf68275755fbab)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_bfcc1ccaab6e101d34f6e133bd60107c = new L.RegularPolygonMarker(
+                [41.90282718566876, -87.63155656356524],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 23.116,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_66b343332b7948bd76f9332de3881277 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e43d472dafa17387ebed92570ee67de = $(`<div id="html_8e43d472dafa17387ebed92570ee67de" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Summer<br>Trips: 17116</div>`)[0];
+                popup_66b343332b7948bd76f9332de3881277.setContent(html_8e43d472dafa17387ebed92570ee67de);
+            
+        
+
+        regular_polygon_marker_bfcc1ccaab6e101d34f6e133bd60107c.bindPopup(popup_66b343332b7948bd76f9332de3881277)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a5161b0a3c67b12bd0b6e10b6231637d = new L.RegularPolygonMarker(
+                [41.90331793074479, -87.63423535596345],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 22.594,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_91aed3c628ad3a5a04d67579d2884683 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db15d8b0f01a2d084e7a028d5143163c = $(`<div id="html_db15d8b0f01a2d084e7a028d5143163c" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Summer<br>Trips: 16594</div>`)[0];
+                popup_91aed3c628ad3a5a04d67579d2884683.setContent(html_db15d8b0f01a2d084e7a028d5143163c);
+            
+        
+
+        regular_polygon_marker_a5161b0a3c67b12bd0b6e10b6231637d.bindPopup(popup_91aed3c628ad3a5a04d67579d2884683)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e8f5d58add3f1ab469fdbe4b20f1806d = new L.RegularPolygonMarker(
+                [41.915885630444414, -87.6344568013127],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 22.313,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_57e0abbb479e5e19cd978cb5c39d7905 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_109606edbfdedf088fe8cd192e44505f = $(`<div id="html_109606edbfdedf088fe8cd192e44505f" style="width: 100.0%; height: 100.0%;"><b>Clark St & Lincoln Ave</b><br>Season: Summer<br>Trips: 16313</div>`)[0];
+                popup_57e0abbb479e5e19cd978cb5c39d7905.setContent(html_109606edbfdedf088fe8cd192e44505f);
+            
+        
+
+        regular_polygon_marker_e8f5d58add3f1ab469fdbe4b20f1806d.bindPopup(popup_57e0abbb479e5e19cd978cb5c39d7905)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_d072d6d248dae5a1ff94d0b1218f5543 = new L.RegularPolygonMarker(
+                [41.91155462128478, -87.62662729209096],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 21.488,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_3f9ef325f222eb7642b6f400426fcd9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d11b0b49a757151c62ebf155d889442c = $(`<div id="html_d11b0b49a757151c62ebf155d889442c" style="width: 100.0%; height: 100.0%;"><b>DuSable Lake Shore Dr & North Blvd</b><br>Season: Summer<br>Trips: 15488</div>`)[0];
+                popup_3f9ef325f222eb7642b6f400426fcd9e.setContent(html_d11b0b49a757151c62ebf155d889442c);
+            
+        
+
+        regular_polygon_marker_d072d6d248dae5a1ff94d0b1218f5543.bindPopup(popup_3f9ef325f222eb7642b6f400426fcd9e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_8d7a9d1a27d1f56487cdb1a0cf5e2c00 = new L.RegularPolygonMarker(
+                [41.91818607428341, -87.6361430947917],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 20.96,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_90673ab3642e869bafd97d62a51ca59c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3bff4b6c7c0c27d52412d94b964429d = $(`<div id="html_e3bff4b6c7c0c27d52412d94b964429d" style="width: 100.0%; height: 100.0%;"><b>Clark St & Armitage Ave</b><br>Season: Summer<br>Trips: 14960</div>`)[0];
+                popup_90673ab3642e869bafd97d62a51ca59c.setContent(html_e3bff4b6c7c0c27d52412d94b964429d);
+            
+        
+
+        regular_polygon_marker_8d7a9d1a27d1f56487cdb1a0cf5e2c00.bindPopup(popup_90673ab3642e869bafd97d62a51ca59c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f929dc68e0f5d4e299f746017f70407d = new L.RegularPolygonMarker(
+                [41.891281452668494, -87.62673403609874],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 20.516,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_f2dc2e4d6f23290ef98d00efa1386d3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3137a64410f2b4e7f09791462f9c2ee = $(`<div id="html_a3137a64410f2b4e7f09791462f9c2ee" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Summer<br>Trips: 14516</div>`)[0];
+                popup_f2dc2e4d6f23290ef98d00efa1386d3e.setContent(html_a3137a64410f2b4e7f09791462f9c2ee);
+            
+        
+
+        regular_polygon_marker_f929dc68e0f5d4e299f746017f70407d.bindPopup(popup_f2dc2e4d6f23290ef98d00efa1386d3e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_2fc10d693ef437a7d0817439571cea5e = new L.RegularPolygonMarker(
+                [41.93779097317815, -87.64409483103027],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 19.584,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_5d3691a8ab9bc5064b13bfbf09ab63d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a81204996a3e5bee07be5b28e5e5a6d3 = $(`<div id="html_a81204996a3e5bee07be5b28e5e5a6d3" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Summer<br>Trips: 13584</div>`)[0];
+                popup_5d3691a8ab9bc5064b13bfbf09ab63d7.setContent(html_a81204996a3e5bee07be5b28e5e5a6d3);
+            
+        
+
+        regular_polygon_marker_2fc10d693ef437a7d0817439571cea5e.bindPopup(popup_5d3691a8ab9bc5064b13bfbf09ab63d7)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e6f44d0a5f69be05a8dc4f7b0983a9f4 = new L.RegularPolygonMarker(
+                [41.86740491317707, -87.61520585022993],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 19.409,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a9cb2d3de6ff6b72a511a2921beb0085 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2266c2755e0cf3094e450781cf3b8e45 = $(`<div id="html_2266c2755e0cf3094e450781cf3b8e45" style="width: 100.0%; height: 100.0%;"><b>Shedd Aquarium</b><br>Season: Summer<br>Trips: 13409</div>`)[0];
+                popup_a9cb2d3de6ff6b72a511a2921beb0085.setContent(html_2266c2755e0cf3094e450781cf3b8e45);
+            
+        
+
+        regular_polygon_marker_e6f44d0a5f69be05a8dc4f7b0983a9f4.bindPopup(popup_a9cb2d3de6ff6b72a511a2921beb0085)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a95ea59bcd7834c3792e41ccfff5555c = new L.RegularPolygonMarker(
+                [41.88929298059374, -87.63864805381853],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 19.393,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a2f73be955cbb6cbff189a251e2b182c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0be76a531e86a520de8f4ebcd0d49c4 = $(`<div id="html_c0be76a531e86a520de8f4ebcd0d49c4" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Summer<br>Trips: 13393</div>`)[0];
+                popup_a2f73be955cbb6cbff189a251e2b182c.setContent(html_c0be76a531e86a520de8f4ebcd0d49c4);
+            
+        
+
+        regular_polygon_marker_a95ea59bcd7834c3792e41ccfff5555c.bindPopup(popup_a2f73be955cbb6cbff189a251e2b182c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_70aacb7cffbcdc2bc917f3729ae8c8f2 = new L.RegularPolygonMarker(
+                [41.86780628037641, -87.62286391823389],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 19.258,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_5e357eca700c1eb6c075f18d5e9cfa50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21f8cd42fe8b00c9828cf3872dbbfb27 = $(`<div id="html_21f8cd42fe8b00c9828cf3872dbbfb27" style="width: 100.0%; height: 100.0%;"><b>Indiana Ave & Roosevelt Rd</b><br>Season: Summer<br>Trips: 13258</div>`)[0];
+                popup_5e357eca700c1eb6c075f18d5e9cfa50.setContent(html_21f8cd42fe8b00c9828cf3872dbbfb27);
+            
+        
+
+        regular_polygon_marker_70aacb7cffbcdc2bc917f3729ae8c8f2.bindPopup(popup_5e357eca700c1eb6c075f18d5e9cfa50)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_164769bfdd01a24a48b8a05d4e2009ea = new L.RegularPolygonMarker(
+                [41.8941018679043, -87.62922404696748],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 19.226,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_03a5013d56f60496a1e5c023f445bf5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b765d8014f7cb81baa6ae2da81359fc = $(`<div id="html_8b765d8014f7cb81baa6ae2da81359fc" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Summer<br>Trips: 13226</div>`)[0];
+                popup_03a5013d56f60496a1e5c023f445bf5e.setContent(html_8b765d8014f7cb81baa6ae2da81359fc);
+            
+        
+
+        regular_polygon_marker_164769bfdd01a24a48b8a05d4e2009ea.bindPopup(popup_03a5013d56f60496a1e5c023f445bf5e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_540c6ad7458f36b4697f57f4bbbbdfeb = new L.RegularPolygonMarker(
+                [41.92190304319969, -87.64395613074709],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.990000000000002,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a4173dae0d1efe4885739513f902546f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97c3ff73efc95a78b4d395ab5e8cdfd0 = $(`<div id="html_97c3ff73efc95a78b4d395ab5e8cdfd0" style="width: 100.0%; height: 100.0%;"><b>Larrabee St & Webster Ave</b><br>Season: Summer<br>Trips: 12990</div>`)[0];
+                popup_a4173dae0d1efe4885739513f902546f.setContent(html_97c3ff73efc95a78b4d395ab5e8cdfd0);
+            
+        
+
+        regular_polygon_marker_540c6ad7458f36b4697f57f4bbbbdfeb.bindPopup(popup_a4173dae0d1efe4885739513f902546f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_39d7561e5ce911393a75fb8c46c2df7e = new L.RegularPolygonMarker(
+                [41.894563496349605, -87.63425874128357],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.853,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_434551154be55b883ced64a17597ec9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_688204c4d6381c459e2c9ebdc572c14d = $(`<div id="html_688204c4d6381c459e2c9ebdc572c14d" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Summer<br>Trips: 12853</div>`)[0];
+                popup_434551154be55b883ced64a17597ec9f.setContent(html_688204c4d6381c459e2c9ebdc572c14d);
+            
+        
+
+        regular_polygon_marker_39d7561e5ce911393a75fb8c46c2df7e.bindPopup(popup_434551154be55b883ced64a17597ec9f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_8c40399c82c492694cb42ec842f802ca = new L.RegularPolygonMarker(
+                [41.89429684048768, -87.62277487605553],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.332,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_4d0b5d3edeb3a60cf774a7d21c699c7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_413d1724e4c589b31b6565254b717a13 = $(`<div id="html_413d1724e4c589b31b6565254b717a13" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Summer<br>Trips: 12332</div>`)[0];
+                popup_4d0b5d3edeb3a60cf774a7d21c699c7c.setContent(html_413d1724e4c589b31b6565254b717a13);
+            
+        
+
+        regular_polygon_marker_8c40399c82c492694cb42ec842f802ca.bindPopup(popup_4d0b5d3edeb3a60cf774a7d21c699c7c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_908f8563019af62e2a7171894d7b22d4 = new L.RegularPolygonMarker(
+                [41.940352220206876, -87.65313888995261],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.322,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ba0daa19e5a78a8bdbecfc0e4dc4adeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1588f0242bfa46661e815c4699132729 = $(`<div id="html_1588f0242bfa46661e815c4699132729" style="width: 100.0%; height: 100.0%;"><b>Wilton Ave & Belmont Ave</b><br>Season: Summer<br>Trips: 12322</div>`)[0];
+                popup_ba0daa19e5a78a8bdbecfc0e4dc4adeb.setContent(html_1588f0242bfa46661e815c4699132729);
+            
+        
+
+        regular_polygon_marker_908f8563019af62e2a7171894d7b22d4.bindPopup(popup_ba0daa19e5a78a8bdbecfc0e4dc4adeb)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_0fc0e291874fe2e5c8d5a019b280148a = new L.RegularPolygonMarker(
+                [41.890800018010914, -87.61853495714664],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 18.024,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1d6cdc172f3e8157c633fbc5f988e591 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e783207a569192e7bf7113333ced1c1b = $(`<div id="html_e783207a569192e7bf7113333ced1c1b" style="width: 100.0%; height: 100.0%;"><b>New St & Illinois St</b><br>Season: Summer<br>Trips: 12024</div>`)[0];
+                popup_1d6cdc172f3e8157c633fbc5f988e591.setContent(html_e783207a569192e7bf7113333ced1c1b);
+            
+        
+
+        regular_polygon_marker_0fc0e291874fe2e5c8d5a019b280148a.bindPopup(popup_1d6cdc172f3e8157c633fbc5f988e591)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f8c3079b8022f5dfcd10e14cf2e0c902 = new L.RegularPolygonMarker(
+                [41.88094816729888, -87.61661035872547],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.881999999999998,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a0c7ecf024875d699624e37c995688e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28825ad384a3ad9b41d8e5884534fd25 = $(`<div id="html_28825ad384a3ad9b41d8e5884534fd25" style="width: 100.0%; height: 100.0%;"><b>Lake Shore Dr & Monroe St</b><br>Season: Summer<br>Trips: 11882</div>`)[0];
+                popup_a0c7ecf024875d699624e37c995688e5.setContent(html_28825ad384a3ad9b41d8e5884534fd25);
+            
+        
+
+        regular_polygon_marker_f8c3079b8022f5dfcd10e14cf2e0c902.bindPopup(popup_a0c7ecf024875d699624e37c995688e5)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_6e3de10244102366f689773e727f0da4 = new L.RegularPolygonMarker(
+                [41.88168690476796, -87.64884963012314],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.844,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_426dde651a03c7b883475b6f8b160c11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_932e6b5d1ed37ac1301ae7a399d6e53d = $(`<div id="html_932e6b5d1ed37ac1301ae7a399d6e53d" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Summer<br>Trips: 11844</div>`)[0];
+                popup_426dde651a03c7b883475b6f8b160c11.setContent(html_932e6b5d1ed37ac1301ae7a399d6e53d);
+            
+        
+
+        regular_polygon_marker_6e3de10244102366f689773e727f0da4.bindPopup(popup_426dde651a03c7b883475b6f8b160c11)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_56a4ed5e13b66a496b0a87cbb2d51c7b = new L.RegularPolygonMarker(
+                [41.90663239131057, -87.63500001079449],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.778,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_5e2c0a670ed18c999a2118bb82dadfc6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1c291dfb929f2a64a3b3514e539f450 = $(`<div id="html_a1c291dfb929f2a64a3b3514e539f450" style="width: 100.0%; height: 100.0%;"><b>Wells St & Evergreen Ave</b><br>Season: Summer<br>Trips: 11778</div>`)[0];
+                popup_5e2c0a670ed18c999a2118bb82dadfc6.setContent(html_a1c291dfb929f2a64a3b3514e539f450);
+            
+        
+
+        regular_polygon_marker_56a4ed5e13b66a496b0a87cbb2d51c7b.bindPopup(popup_5e2c0a670ed18c999a2118bb82dadfc6)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5b3b199e527865658e070642a13c6bca = new L.RegularPolygonMarker(
+                [41.92585711970909, -87.64912908020192],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.573,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_7412842b77eb5b19655809c6a22d57a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c262075ad1fcab10b1eca1189522f057 = $(`<div id="html_c262075ad1fcab10b1eca1189522f057" style="width: 100.0%; height: 100.0%;"><b>Lincoln Ave & Fullerton Ave</b><br>Season: Summer<br>Trips: 11573</div>`)[0];
+                popup_7412842b77eb5b19655809c6a22d57a3.setContent(html_c262075ad1fcab10b1eca1189522f057);
+            
+        
+
+        regular_polygon_marker_5b3b199e527865658e070642a13c6bca.bindPopup(popup_7412842b77eb5b19655809c6a22d57a3)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_8c5600a7ddd0a4cec4316c29b4353e39 = new L.RegularPolygonMarker(
+                [41.92602388327932, -87.63884117458979],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.557000000000002,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_aa3d4902f4b11bd772c928bc87670510 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec165096475de3a1e7a16e0e891edbef = $(`<div id="html_ec165096475de3a1e7a16e0e891edbef" style="width: 100.0%; height: 100.0%;"><b>Lakeview Ave & Fullerton Pkwy</b><br>Season: Summer<br>Trips: 11557</div>`)[0];
+                popup_aa3d4902f4b11bd772c928bc87670510.setContent(html_ec165096475de3a1e7a16e0e891edbef);
+            
+        
+
+        regular_polygon_marker_8c5600a7ddd0a4cec4316c29b4353e39.bindPopup(popup_aa3d4902f4b11bd772c928bc87670510)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e2ed533520dabd0de0f2158cf715e4cb = new L.RegularPolygonMarker(
+                [41.949444035430204, -87.6544394324917],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.517,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_678881f8a017b71f084c425bd47be9b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bffd67e30d2bc509a69512df51ec1c0 = $(`<div id="html_1bffd67e30d2bc509a69512df51ec1c0" style="width: 100.0%; height: 100.0%;"><b>Sheffield Ave & Waveland Ave</b><br>Season: Summer<br>Trips: 11517</div>`)[0];
+                popup_678881f8a017b71f084c425bd47be9b9.setContent(html_1bffd67e30d2bc509a69512df51ec1c0);
+            
+        
+
+        regular_polygon_marker_e2ed533520dabd0de0f2158cf715e4cb.bindPopup(popup_678881f8a017b71f084c425bd47be9b9)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_ceb236a55902a0982e69ba2d7f13e276 = new L.RegularPolygonMarker(
+                [41.89188475084946, -87.62059367063168],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.366,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_2521e9814c9f066d89d4bb18b11b3d10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5d595d68286ca28ad9156bd49f5c084 = $(`<div id="html_b5d595d68286ca28ad9156bd49f5c084" style="width: 100.0%; height: 100.0%;"><b>Fairbanks Ct & Grand Ave</b><br>Season: Summer<br>Trips: 11366</div>`)[0];
+                popup_2521e9814c9f066d89d4bb18b11b3d10.setContent(html_b5d595d68286ca28ad9156bd49f5c084);
+            
+        
+
+        regular_polygon_marker_ceb236a55902a0982e69ba2d7f13e276.bindPopup(popup_2521e9814c9f066d89d4bb18b11b3d10)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_09664e9b9b966a0df3870abcea78ed7f = new L.RegularPolygonMarker(
+                [41.96386629080015, -87.63833304497427],
+                {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 17.125999999999998,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_da5544da9383bde19cebf651d0e7c110 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_905c96067aa63e6493a50f3f405aae0d = $(`<div id="html_905c96067aa63e6493a50f3f405aae0d" style="width: 100.0%; height: 100.0%;"><b>Montrose Harbor</b><br>Season: Summer<br>Trips: 11126</div>`)[0];
+                popup_da5544da9383bde19cebf651d0e7c110.setContent(html_905c96067aa63e6493a50f3f405aae0d);
+            
+        
+
+        regular_polygon_marker_09664e9b9b966a0df3870abcea78ed7f.bindPopup(popup_da5544da9383bde19cebf651d0e7c110)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e6764a648034012a62d5e2e5d6a14b2c = new L.RegularPolygonMarker(
+                [41.90295835249716, -87.63143212293981],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 9.149000000000001,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_13ca2d3e8276af3d1569e2dd96cb85d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26eb24bb3a0a40238adf97cf5a74feb2 = $(`<div id="html_26eb24bb3a0a40238adf97cf5a74feb2" style="width: 100.0%; height: 100.0%;"><b>Clark St & Elm St</b><br>Season: Winter<br>Trips: 3149</div>`)[0];
+                popup_13ca2d3e8276af3d1569e2dd96cb85d8.setContent(html_26eb24bb3a0a40238adf97cf5a74feb2);
+            
+        
+
+        regular_polygon_marker_e6764a648034012a62d5e2e5d6a14b2c.bindPopup(popup_13ca2d3e8276af3d1569e2dd96cb85d8)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_8dba83f3cd581b76831cd8241648a0d0 = new L.RegularPolygonMarker(
+                [41.889338010509945, -87.63834729763691],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.936,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a2fbb1bb50d91a52ac45af393e80c76d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ba444192628779474cc66fbda366e61 = $(`<div id="html_2ba444192628779474cc66fbda366e61" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Kinzie St</b><br>Season: Winter<br>Trips: 2936</div>`)[0];
+                popup_a2fbb1bb50d91a52ac45af393e80c76d.setContent(html_2ba444192628779474cc66fbda366e61);
+            
+        
+
+        regular_polygon_marker_8dba83f3cd581b76831cd8241648a0d0.bindPopup(popup_a2fbb1bb50d91a52ac45af393e80c76d)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_86697888577a7b52b87ffd0dad39dfe2 = new L.RegularPolygonMarker(
+                [41.89406720210955, -87.62930156289495],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.911999999999999,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_410dcd29d6247d3d0467b4307c1acb78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dbc49a4858a371dfef4ef493c2d97ee = $(`<div id="html_7dbc49a4858a371dfef4ef493c2d97ee" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Erie St</b><br>Season: Winter<br>Trips: 2912</div>`)[0];
+                popup_410dcd29d6247d3d0467b4307c1acb78.setContent(html_7dbc49a4858a371dfef4ef493c2d97ee);
+            
+        
+
+        regular_polygon_marker_86697888577a7b52b87ffd0dad39dfe2.bindPopup(popup_410dcd29d6247d3d0467b4307c1acb78)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_2faf54042afbc1b14d0fecf33585e1b1 = new L.RegularPolygonMarker(
+                [41.89431982665695, -87.62285979240922],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.839,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_61009ff07a82770bf17deb1087f9e518 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39557daf79528589b4bc0d5547bf190d = $(`<div id="html_39557daf79528589b4bc0d5547bf190d" style="width: 100.0%; height: 100.0%;"><b>St. Clair St & Erie St</b><br>Season: Winter<br>Trips: 2839</div>`)[0];
+                popup_61009ff07a82770bf17deb1087f9e518.setContent(html_39557daf79528589b4bc0d5547bf190d);
+            
+        
+
+        regular_polygon_marker_2faf54042afbc1b14d0fecf33585e1b1.bindPopup(popup_61009ff07a82770bf17deb1087f9e518)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_bd4e8ebafc724e0d168ee8db3937835c = new L.RegularPolygonMarker(
+                [41.882235516890226, -87.64104105873729],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.515,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_24de257150f28ad5ef70a479b97101c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2866eb32204f26582bfd207e4d81e31 = $(`<div id="html_a2866eb32204f26582bfd207e4d81e31" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Madison St</b><br>Season: Winter<br>Trips: 2515</div>`)[0];
+                popup_24de257150f28ad5ef70a479b97101c2.setContent(html_a2866eb32204f26582bfd207e4d81e31);
+            
+        
+
+        regular_polygon_marker_bd4e8ebafc724e0d168ee8db3937835c.bindPopup(popup_24de257150f28ad5ef70a479b97101c2)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a10b2041d38d24565ead1b96a71fa883 = new L.RegularPolygonMarker(
+                [41.912162738108876, -87.63464792572177],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.453,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_a1d2b2aab5f60ba887aeb675f02b8b8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06247d3ef16b1f3af6467dd84f193fe4 = $(`<div id="html_06247d3ef16b1f3af6467dd84f193fe4" style="width: 100.0%; height: 100.0%;"><b>Wells St & Concord Ln</b><br>Season: Winter<br>Trips: 2453</div>`)[0];
+                popup_a1d2b2aab5f60ba887aeb675f02b8b8e.setContent(html_06247d3ef16b1f3af6467dd84f193fe4);
+            
+        
+
+        regular_polygon_marker_a10b2041d38d24565ead1b96a71fa883.bindPopup(popup_a1d2b2aab5f60ba887aeb675f02b8b8e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_42342a80b95fa6eecc91521d110e405e = new L.RegularPolygonMarker(
+                [41.89468692486405, -87.63431480967192],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.421,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_1bc771146d6048b9ac5dc2cc09dd1ad1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd20c3014cbcad9918ed380af8c88ed8 = $(`<div id="html_fd20c3014cbcad9918ed380af8c88ed8" style="width: 100.0%; height: 100.0%;"><b>Wells St & Huron St</b><br>Season: Winter<br>Trips: 2421</div>`)[0];
+                popup_1bc771146d6048b9ac5dc2cc09dd1ad1.setContent(html_fd20c3014cbcad9918ed380af8c88ed8);
+            
+        
+
+        regular_polygon_marker_42342a80b95fa6eecc91521d110e405e.bindPopup(popup_1bc771146d6048b9ac5dc2cc09dd1ad1)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c3cdf5867b07c7f039975d1b4df915ae = new L.RegularPolygonMarker(
+                [41.90335674946334, -87.63439205321576],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.362,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_939bde0af77c8dc191c6082673774639 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77837c21c7b713e7d089e19b60958393 = $(`<div id="html_77837c21c7b713e7d089e19b60958393" style="width: 100.0%; height: 100.0%;"><b>Wells St & Elm St</b><br>Season: Winter<br>Trips: 2362</div>`)[0];
+                popup_939bde0af77c8dc191c6082673774639.setContent(html_77837c21c7b713e7d089e19b60958393);
+            
+        
+
+        regular_polygon_marker_c3cdf5867b07c7f039975d1b4df915ae.bindPopup(popup_939bde0af77c8dc191c6082673774639)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_9824d381b7c1dacc5398732d96280fce = new L.RegularPolygonMarker(
+                [41.891258236158386, -87.62687748550944],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.236,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_d557612cabbce41bcbf88277a80f28d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45cd3db72cdfdda04fcea6f83c2e82ea = $(`<div id="html_45cd3db72cdfdda04fcea6f83c2e82ea" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Grand Ave</b><br>Season: Winter<br>Trips: 2236</div>`)[0];
+                popup_d557612cabbce41bcbf88277a80f28d7.setContent(html_45cd3db72cdfdda04fcea6f83c2e82ea);
+            
+        
+
+        regular_polygon_marker_9824d381b7c1dacc5398732d96280fce.bindPopup(popup_d557612cabbce41bcbf88277a80f28d7)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_ce079efe987cf9d3a5f31ff0f4a46d74 = new L.RegularPolygonMarker(
+                [41.88340037996417, -87.6410359897949],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.112,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_18747228bc34b775a261bccdf8c69c74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27465a607b2f3b08e1d2bb61aa8438bd = $(`<div id="html_27465a607b2f3b08e1d2bb61aa8438bd" style="width: 100.0%; height: 100.0%;"><b>Clinton St & Washington Blvd</b><br>Season: Winter<br>Trips: 2112</div>`)[0];
+                popup_18747228bc34b775a261bccdf8c69c74.setContent(html_27465a607b2f3b08e1d2bb61aa8438bd);
+            
+        
+
+        regular_polygon_marker_ce079efe987cf9d3a5f31ff0f4a46d74.bindPopup(popup_18747228bc34b775a261bccdf8c69c74)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e87584b675cec8fde61f6d8b848531d6 = new L.RegularPolygonMarker(
+                [41.888791043771896, -87.64442518316727],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.093,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_65e4cc6db1256a2c5934d32c13005c00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffa9e644b387959b8e6ec1dae0163aba = $(`<div id="html_ffa9e644b387959b8e6ec1dae0163aba" style="width: 100.0%; height: 100.0%;"><b>Desplaines St & Kinzie St</b><br>Season: Winter<br>Trips: 2093</div>`)[0];
+                popup_65e4cc6db1256a2c5934d32c13005c00.setContent(html_ffa9e644b387959b8e6ec1dae0163aba);
+            
+        
+
+        regular_polygon_marker_e87584b675cec8fde61f6d8b848531d6.bindPopup(popup_65e4cc6db1256a2c5934d32c13005c00)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_36ca0700b125dbe3307e028d80bdb014 = new L.RegularPolygonMarker(
+                [41.88402581205126, -87.62942975415046],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.038,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_24fb91305480113701ef676c30be4927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5bbf10776107df0994dc97f9d414df7 = $(`<div id="html_c5bbf10776107df0994dc97f9d414df7" style="width: 100.0%; height: 100.0%;"><b>Daley Center Plaza</b><br>Season: Winter<br>Trips: 2038</div>`)[0];
+                popup_24fb91305480113701ef676c30be4927.setContent(html_c5bbf10776107df0994dc97f9d414df7);
+            
+        
+
+        regular_polygon_marker_36ca0700b125dbe3307e028d80bdb014.bindPopup(popup_24fb91305480113701ef676c30be4927)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5199f28c6533bacc33f07dcfffbd9451 = new L.RegularPolygonMarker(
+                [41.93740980485848, -87.64398700080879],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8.023,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_882d5de62eb3869918d204407b4af5a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aeb1dbe8ae68060fa7ae1b4f9ec81d8a = $(`<div id="html_aeb1dbe8ae68060fa7ae1b4f9ec81d8a" style="width: 100.0%; height: 100.0%;"><b>Broadway & Barry Ave</b><br>Season: Winter<br>Trips: 2023</div>`)[0];
+                popup_882d5de62eb3869918d204407b4af5a9.setContent(html_aeb1dbe8ae68060fa7ae1b4f9ec81d8a);
+            
+        
+
+        regular_polygon_marker_5199f28c6533bacc33f07dcfffbd9451.bindPopup(popup_882d5de62eb3869918d204407b4af5a9)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_cc164144b0566a191e0a46f04dfc3130 = new L.RegularPolygonMarker(
+                [41.88206179304799, -87.64868468581045],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.958,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_2cf550ee675b773657fff1a4a918c993 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb4cbe7593500dd56972033e2c0e89fc = $(`<div id="html_fb4cbe7593500dd56972033e2c0e89fc" style="width: 100.0%; height: 100.0%;"><b>Green St & Madison St</b><br>Season: Winter<br>Trips: 1958</div>`)[0];
+                popup_2cf550ee675b773657fff1a4a918c993.setContent(html_fb4cbe7593500dd56972033e2c0e89fc);
+            
+        
+
+        regular_polygon_marker_cc164144b0566a191e0a46f04dfc3130.bindPopup(popup_2cf550ee675b773657fff1a4a918c993)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4d5372d3e04c183f15f172a348bb8b3f = new L.RegularPolygonMarker(
+                [41.88984871043577, -87.63420035932998],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.946,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_0a518b4732f12216c2fd860ec1401d16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4919fdd67e1a0647b05a0226a18ba0b = $(`<div id="html_c4919fdd67e1a0647b05a0226a18ba0b" style="width: 100.0%; height: 100.0%;"><b>Wells St & Hubbard St</b><br>Season: Winter<br>Trips: 1946</div>`)[0];
+                popup_0a518b4732f12216c2fd860ec1401d16.setContent(html_c4919fdd67e1a0647b05a0226a18ba0b);
+            
+        
+
+        regular_polygon_marker_4d5372d3e04c183f15f172a348bb8b3f.bindPopup(popup_0a518b4732f12216c2fd860ec1401d16)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_605a91329886f81c43b7385d4f52d538 = new L.RegularPolygonMarker(
+                [41.89446210910748, -87.61796281139233],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.92,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_28287ab34c11ae55203ff043ad6535be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b55b6ec2c4ed6f6b76d5850db2abf61b = $(`<div id="html_b55b6ec2c4ed6f6b76d5850db2abf61b" style="width: 100.0%; height: 100.0%;"><b>McClurg Ct & Erie St</b><br>Season: Winter<br>Trips: 1920</div>`)[0];
+                popup_28287ab34c11ae55203ff043ad6535be.setContent(html_b55b6ec2c4ed6f6b76d5850db2abf61b);
+            
+        
+
+        regular_polygon_marker_605a91329886f81c43b7385d4f52d538.bindPopup(popup_28287ab34c11ae55203ff043ad6535be)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c1f4fd093d30ba6decef070ad974d354 = new L.RegularPolygonMarker(
+                [41.949203679505445, -87.64853813031614],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.901,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_8c608b2772087a11eaccfae0ea79db95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_764b027fe19854b89849a5aec0ad1910 = $(`<div id="html_764b027fe19854b89849a5aec0ad1910" style="width: 100.0%; height: 100.0%;"><b>Broadway & Waveland Ave</b><br>Season: Winter<br>Trips: 1901</div>`)[0];
+                popup_8c608b2772087a11eaccfae0ea79db95.setContent(html_764b027fe19854b89849a5aec0ad1910);
+            
+        
+
+        regular_polygon_marker_c1f4fd093d30ba6decef070ad974d354.bindPopup(popup_8c608b2772087a11eaccfae0ea79db95)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a22b57df3bdf292c93ce4b28a850b027 = new L.RegularPolygonMarker(
+                [41.892352637481864, -87.61211159334825],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.894,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_f5fcde337f254eb6ed6a096b4d2dab52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d88fea66664003d1bf9b631238691caa = $(`<div id="html_d88fea66664003d1bf9b631238691caa" style="width: 100.0%; height: 100.0%;"><b>Streeter Dr & Grand Ave</b><br>Season: Winter<br>Trips: 1894</div>`)[0];
+                popup_f5fcde337f254eb6ed6a096b4d2dab52.setContent(html_d88fea66664003d1bf9b631238691caa);
+            
+        
+
+        regular_polygon_marker_a22b57df3bdf292c93ce4b28a850b027.bindPopup(popup_f5fcde337f254eb6ed6a096b4d2dab52)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_787c67e81ff26c118c70d30afa704a44 = new L.RegularPolygonMarker(
+                [41.86740736137333, -87.62581095411993],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.8629999999999995,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_91cb79d9d853e940d910a1565868f633 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0372df284447a246efbef4050acb1861 = $(`<div id="html_0372df284447a246efbef4050acb1861" style="width: 100.0%; height: 100.0%;"><b>Wabash Ave & Roosevelt Rd</b><br>Season: Winter<br>Trips: 1863</div>`)[0];
+                popup_91cb79d9d853e940d910a1565868f633.setContent(html_0372df284447a246efbef4050acb1861);
+            
+        
+
+        regular_polygon_marker_787c67e81ff26c118c70d30afa704a44.bindPopup(popup_91cb79d9d853e940d910a1565868f633)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_99178b1c193771fa8950efbe2b7c9ca8 = new L.RegularPolygonMarker(
+                [41.880972207602156, -87.62397324430327],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.849,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_ecca2f7cc15a71473fee71c462e5ddfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffe08e972034580074a5e7ec2b75f1ed = $(`<div id="html_ffe08e972034580074a5e7ec2b75f1ed" style="width: 100.0%; height: 100.0%;"><b>Millennium Park</b><br>Season: Winter<br>Trips: 1849</div>`)[0];
+                popup_ecca2f7cc15a71473fee71c462e5ddfb.setContent(html_ffe08e972034580074a5e7ec2b75f1ed);
+            
+        
+
+        regular_polygon_marker_99178b1c193771fa8950efbe2b7c9ca8.bindPopup(popup_ecca2f7cc15a71473fee71c462e5ddfb)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_67e45dbffce83bd38f28f32ef1a59e98 = new L.RegularPolygonMarker(
+                [41.881202669632465, -87.62975294606969],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.7989999999999995,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_59c9956dee18c4d0db24fb256f907aba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_056f7aab72258cf2f4f66abe4c61be29 = $(`<div id="html_056f7aab72258cf2f4f66abe4c61be29" style="width: 100.0%; height: 100.0%;"><b>Dearborn St & Monroe St</b><br>Season: Winter<br>Trips: 1799</div>`)[0];
+                popup_59c9956dee18c4d0db24fb256f907aba.setContent(html_056f7aab72258cf2f4f66abe4c61be29);
+            
+        
+
+        regular_polygon_marker_67e45dbffce83bd38f28f32ef1a59e98.bindPopup(popup_59c9956dee18c4d0db24fb256f907aba)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a0b512c1e300b3a1c629f9e9ac436465 = new L.RegularPolygonMarker(
+                [41.884712150563786, -87.61947901341658],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.793,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_db5220e92705f426fad51e34e9793ded = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9338eb88ed685464744c83dcee908345 = $(`<div id="html_9338eb88ed685464744c83dcee908345" style="width: 100.0%; height: 100.0%;"><b>Columbus Dr & Randolph St</b><br>Season: Winter<br>Trips: 1793</div>`)[0];
+                popup_db5220e92705f426fad51e34e9793ded.setContent(html_9338eb88ed685464744c83dcee908345);
+            
+        
+
+        regular_polygon_marker_a0b512c1e300b3a1c629f9e9ac436465.bindPopup(popup_db5220e92705f426fad51e34e9793ded)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a95156a7a538411018ebbbcdc8bd6e48 = new L.RegularPolygonMarker(
+                [41.903532100182474, -87.66772744888812],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.784,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_f3590d4a09068412544fca9967aafc87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd43599b3d25c74978b72bd1c9332359 = $(`<div id="html_cd43599b3d25c74978b72bd1c9332359" style="width: 100.0%; height: 100.0%;"><b>Ashland Ave & Division St</b><br>Season: Winter<br>Trips: 1784</div>`)[0];
+                popup_f3590d4a09068412544fca9967aafc87.setContent(html_cd43599b3d25c74978b72bd1c9332359);
+            
+        
+
+        regular_polygon_marker_a95156a7a538411018ebbbcdc8bd6e48.bindPopup(popup_f3590d4a09068412544fca9967aafc87)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_acc1a98a22cc9b049874a7cfa751347f = new L.RegularPolygonMarker(
+                [41.79130239911343, -87.59984193579236],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.7829999999999995,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_bdb889de5c0a9352d38d83b3e3c8d43a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_915695c07609888594cbd83abac2090b = $(`<div id="html_915695c07609888594cbd83abac2090b" style="width: 100.0%; height: 100.0%;"><b>University Ave & 57th St</b><br>Season: Winter<br>Trips: 1783</div>`)[0];
+                popup_bdb889de5c0a9352d38d83b3e3c8d43a.setContent(html_915695c07609888594cbd83abac2090b);
+            
+        
+
+        regular_polygon_marker_acc1a98a22cc9b049874a7cfa751347f.bindPopup(popup_bdb889de5c0a9352d38d83b3e3c8d43a)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_ca105644a8cdf17c9a462535581914ea = new L.RegularPolygonMarker(
+                [41.88398368889064, -87.6244723392358],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.707,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_73dab8cfff309636fde4c9fcd532c72c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37a2766475b799ebd42ec6e5fcd053cd = $(`<div id="html_37a2766475b799ebd42ec6e5fcd053cd" style="width: 100.0%; height: 100.0%;"><b>Michigan Ave & Washington St</b><br>Season: Winter<br>Trips: 1707</div>`)[0];
+                popup_73dab8cfff309636fde4c9fcd532c72c.setContent(html_37a2766475b799ebd42ec6e5fcd053cd);
+            
+        
+
+        regular_polygon_marker_ca105644a8cdf17c9a462535581914ea.bindPopup(popup_73dab8cfff309636fde4c9fcd532c72c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_0f4d0ff7ad3fc71594bcabd68bbaf64f = new L.RegularPolygonMarker(
+                [41.89914533023976, -87.62999096495915],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.679,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_c30ef2bbb69516c6a3bbcb027c461a08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05503a3ed98d6a9e0b77b003a4f0de51 = $(`<div id="html_05503a3ed98d6a9e0b77b003a4f0de51" style="width: 100.0%; height: 100.0%;"><b>Dearborn Pkwy & Delaware Pl</b><br>Season: Winter<br>Trips: 1679</div>`)[0];
+                popup_c30ef2bbb69516c6a3bbcb027c461a08.setContent(html_05503a3ed98d6a9e0b77b003a4f0de51);
+            
+        
+
+        regular_polygon_marker_0f4d0ff7ad3fc71594bcabd68bbaf64f.bindPopup(popup_c30ef2bbb69516c6a3bbcb027c461a08)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c38065d61ad20a3f6cb86a325fb6f60c = new L.RegularPolygonMarker(
+                [41.89387766333886, -87.64159397967563],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.672,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_bc4d97eae97970ad14d7ca5aec93cc81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc329efb25502d27716c80a3022335ca = $(`<div id="html_fc329efb25502d27716c80a3022335ca" style="width: 100.0%; height: 100.0%;"><b>Kingsbury St & Erie St</b><br>Season: Winter<br>Trips: 1672</div>`)[0];
+                popup_bc4d97eae97970ad14d7ca5aec93cc81.setContent(html_fc329efb25502d27716c80a3022335ca);
+            
+        
+
+        regular_polygon_marker_c38065d61ad20a3f6cb86a325fb6f60c.bindPopup(popup_bc4d97eae97970ad14d7ca5aec93cc81)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_e1a473004589f01833ef9ff6ad19aaf7 = new L.RegularPolygonMarker(
+                [41.87914835634741, -87.63989571962513],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.652,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_8f78340f950348b51ad1a444cab34926 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdf8795733e913c5ceca53fee03683e7 = $(`<div id="html_fdf8795733e913c5ceca53fee03683e7" style="width: 100.0%; height: 100.0%;"><b>Canal St & Adams St</b><br>Season: Winter<br>Trips: 1652</div>`)[0];
+                popup_8f78340f950348b51ad1a444cab34926.setContent(html_fdf8795733e913c5ceca53fee03683e7);
+            
+        
+
+        regular_polygon_marker_e1a473004589f01833ef9ff6ad19aaf7.bindPopup(popup_8f78340f950348b51ad1a444cab34926)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c648fd2c00beb100a05512462cf5feab = new L.RegularPolygonMarker(
+                [41.88466483248954, -87.627774750387],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.649,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_c33fa8ee0ec915577b46782b87f4604a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69a08a0bfa46e2cb83342762d3ee41ea = $(`<div id="html_69a08a0bfa46e2cb83342762d3ee41ea" style="width: 100.0%; height: 100.0%;"><b>State St & Randolph St</b><br>Season: Winter<br>Trips: 1649</div>`)[0];
+                popup_c33fa8ee0ec915577b46782b87f4604a.setContent(html_69a08a0bfa46e2cb83342762d3ee41ea);
+            
+        
+
+        regular_polygon_marker_c648fd2c00beb100a05512462cf5feab.bindPopup(popup_c33fa8ee0ec915577b46782b87f4604a)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_b5224f7cbb16f916ede02b28e60dbedf = new L.RegularPolygonMarker(
+                [41.78490266737215, -87.60089351634865],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.8,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7.644,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_4efae520026b770081e1691d0881f276);
+        
+    
+        var popup_dba5397c26cefd325f52765baac8b2cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1520c36b8c0bf334e86d39965508af21 = $(`<div id="html_1520c36b8c0bf334e86d39965508af21" style="width: 100.0%; height: 100.0%;"><b>Ellis Ave & 60th St</b><br>Season: Winter<br>Trips: 1644</div>`)[0];
+                popup_dba5397c26cefd325f52765baac8b2cf.setContent(html_1520c36b8c0bf334e86d39965508af21);
+            
+        
+
+        regular_polygon_marker_b5224f7cbb16f916ede02b28e60dbedf.bindPopup(popup_dba5397c26cefd325f52765baac8b2cf)
+        ;
+
+        
+    
+</script>
+</html>

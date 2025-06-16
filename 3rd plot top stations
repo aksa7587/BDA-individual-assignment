@@ -1,0 +1,92 @@
+import pandas as pd
+import folium
+import random
+
+# Load the data
+df = pd.read_csv("seasonal_station_counts.csv")
+
+# Drop rows with missing station names
+df = df[df["station_name"].notna()]
+
+# Separate start and end
+df_start = df[df["type"] == "start"]
+df_end = df[df["type"] == "end"]
+
+# Get top N stations per season
+top_n = 30
+
+top_starts = df_start.sort_values(["season", "trip_count"], ascending=[True, False]) \
+    .groupby("season").head(top_n)
+
+top_ends = df_end.sort_values(["season", "trip_count"], ascending=[True, False]) \
+    .groupby("season").head(top_n)
+
+# Display results
+print("Top Start Stations per Season:")
+print(top_starts[["season", "station_name", "trip_count"]])
+
+print("Top End Stations per Season:")
+print(top_ends[["season", "station_name", "trip_count"]])
+
+df_top = pd.concat([top_starts, top_ends]).reset_index(drop=True)
+
+# Apply jitter to avoid overlapping points
+def jitter(value, amount=0.0002):
+    return value + random.uniform(-amount, amount)
+
+df_top["lat_jittered"] = df_top["lat"].apply(lambda x: jitter(x))
+df_top["lng_jittered"] = df_top["lng"].apply(lambda x: jitter(x))
+
+# Color mapping by season
+season_colors = {
+    "Spring": "green",
+    "Summer": "orange",
+    "Autumn": "purple",
+    "Winter": "blue"
+}
+
+# Initialize maps
+center = [41.8781, -87.6298]
+start_map = folium.Map(location=center, zoom_start=12, control_scale=True)
+end_map = folium.Map(location=center, zoom_start=12, control_scale=True)
+
+# Plot start stations with jitter
+for _, row in df_top[df_top["type"] == "start"].iterrows():
+    color = season_colors.get(row["season"], "gray")
+    popup = folium.Popup(
+        f"<b>{row['station_name']}</b><br>"
+        f"Season: {row['season']}<br>"
+        f"Trips: {row['trip_count']}",
+        max_width=300
+    )
+    folium.CircleMarker(
+        location=[row["lat_jittered"], row["lng_jittered"]],
+        radius=6 + row["trip_count"] / 1000,
+        color=color,
+        fill=True,
+        fill_opacity=0.8,
+        popup=popup
+    ).add_to(start_map)
+
+# Plot end stations with jitter
+for _, row in df_top[df_top["type"] == "end"].iterrows():
+    color = season_colors.get(row["season"], "gray")
+    popup = folium.Popup(
+        f"<b>{row['station_name']}</b><br>"
+        f"Season: {row['season']}<br>"
+        f"Trips: {row['trip_count']}",
+        max_width=300
+    )
+    folium.RegularPolygonMarker(
+        location=[row["lat_jittered"], row["lng_jittered"]],
+        number_of_sides=4,
+        radius=6 + row["trip_count"] / 1000,
+        color=color,
+        fill=True,
+        fill_opacity=0.8,
+        popup=popup
+    ).add_to(end_map)
+
+# Save to HTML
+start_map.save("top_start_stations_map_30_jittered.html")
+end_map.save("top_end_stations_map_30_jittered.html")

@@ -1,0 +1,57 @@
+import pandas as pd
+import folium
+
+# Load prepared data
+df = pd.read_csv("seasonal_station_counts.csv")
+
+# Drop rows with missing or NaN coordinates
+df = df.dropna(subset=["lat", "lng"])
+
+# Color mapping by season
+season_colors = {
+    "Spring": "green",
+    "Summer": "orange",
+    "Autumn": "purple",
+    "Winter": "blue"
+}
+
+# Initialize map centered around Chicago
+m = folium.Map(location=[41.8781, -87.6298], zoom_start=12)
+
+# Plot each station
+for _, row in df.iterrows():
+    color = season_colors.get(row["season"], "gray")
+    radius = 4 + row["trip_count"] / 1000  # Adjust this if the bubbles are too large or small
+
+    popup = folium.Popup(
+        f"<b>{row['station_name']}</b><br>"
+        f"Type: {row['type']}<br>"
+        f"Season: {row['season']}<br>"
+        f"Trips: {row['trip_count']}",
+        max_width=300
+    )
+
+    if row["type"] == "start":
+        marker = folium.CircleMarker(
+            location=[row["lat"], row["lng"]],
+            radius=radius,
+            color=color,
+            fill=True,
+            fill_opacity=0.7,
+            popup=popup
+        )
+    else:
+        marker = folium.RegularPolygonMarker(
+            location=[row["lat"], row["lng"]],
+            number_of_sides=4,  # Square
+            radius=radius,
+            color=color,
+            fill=True,
+            fill_opacity=0.7,
+            popup=popup
+        )
+
+    marker.add_to(m)
+
+# Save to HTML
+m.save("seasonal_station_map.html")

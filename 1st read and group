@@ -1,0 +1,69 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import month, when, col, count, lit, avg
+
+# Initialize Spark session
+spark = SparkSession.builder.appName("BikeDataMap").getOrCreate()
+
+# Load all CSVs
+df = spark.read.option("header", True).option("inferSchema", True).csv("./*.csv")
+
+# Assign seasons to rides
+df = df.withColumn("month", month(col("started_at")))
+df = df.withColumn("season",
+    when(col("month").isin([12, 1, 2]), "Winter")
+    .when(col("month").isin([3, 4, 5]), "Spring")
+    .when(col("month").isin([6, 7, 8]), "Summer")
+    .otherwise("Autumn")
+)
+from pyspark.sql.functions import trim
+
+df = df.withColumn("start_lat", col("start_lat").cast("double")) \
+       .withColumn("start_lng", col("start_lng").cast("double")) \
+       .withColumn("end_lat", col("end_lat").cast("double")) \
+       .withColumn("end_lng", col("end_lng").cast("double"))
+
+# filtering: remove nulls and empty strings
+df_start = df.filter(
+    col("start_lat").isNotNull() &
+    col("start_lng").isNotNull() &
+    (trim(col("start_lat")) != "") &
+    (trim(col("start_lng")) != "")
+)
+
+df_end = df.filter(
+    col("end_lat").isNotNull() &
+    col("end_lng").isNotNull() &
+    (trim(col("end_lat")) != "") &
+    (trim(col("end_lng")) != "")
+)
+
+# Group by start station and season
+start_counts = df_start.groupBy("start_station_name", "season") \
+    .agg(count("*").alias("trip_count")) \
+    .withColumn("type", lit("start"))
+
+# Group by end station and season
+end_counts = df_end.groupBy("end_station_name", "season") \
+    .agg(count("*").alias("trip_count")) \
+    .withColumn("type", lit("end"))
+
+# Rename for consistency
+start_counts = start_counts.withColumnRenamed("start_station_name", "station_name")
+end_counts = end_counts.withColumnRenamed("end_station_name", "station_name")
+
+# Combine both
+combined_counts = start_counts.union(end_counts)
+
+# Add average coordinates for each station (for later mapping)
+avg_coords = df.select("start_station_name", "start_lat", "start_lng") \
+    .groupBy("start_station_name") \
+    .agg(avg("start_lat").alias("lat"), avg("start_lng").alias("lng")) \
+    .withColumnRenamed("start_station_name", "station_name")
+
+combined_counts = combined_counts.join(avg_coords, on="station_name", how="left")
+
+combined_counts.show(20)
+
+# Export for plotting
+stations_pd = combined_counts.toPandas()
+stations_pd.to_csv("seasonal_station_counts.csv", index=False)

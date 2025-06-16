@@ -1,0 +1,84 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import folium
+
+# Load data
+df = pd.read_csv("seasonal_station_counts.csv")
+
+# Drop any rows with missing data
+df = df.dropna(subset=["station_name", "season", "trip_count", "lat", "lng"])
+
+# Pivot to wide format: one row per station
+pivot = df.pivot_table(
+    index=["station_name", "lat", "lng"],
+    columns="season",
+    values="trip_count",
+    fill_value=0
+).reset_index()
+
+# Reorder columns
+pivot = pivot[["station_name", "lat", "lng", "Winter", "Spring", "Summer", "Autumn"]]
+
+# Scale only the seasonal counts
+features = pivot[["Winter", "Spring", "Summer", "Autumn"]]
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(features)
+
+
+# Elbow method to determine the optimal k for clustering
+inertias = []
+k_range = range(1, 11)
+
+for k in k_range:
+    kmeans = KMeans(n_clusters=k, random_state=42)
+    kmeans.fit(X_scaled)
+    inertias.append(kmeans.inertia_)
+
+# Plot the Elbow curve
+plt.figure(figsize=(8, 5))
+plt.plot(k_range, inertias, marker='o')
+plt.title("Elbow Method to Determine Optimal k")
+plt.xlabel("Number of Clusters (k)")
+plt.ylabel("Inertia (Within-Cluster Sum of Squares)")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# Apply KMeans
+kmeans = KMeans(n_clusters=3, random_state=42)
+pivot["cluster"] = kmeans.fit_predict(X_scaled)
+
+print(pivot[["station_name", "Winter", "Spring", "Summer", "Autumn", "cluster"]].head())
+pivot.to_csv("clustered_stations.csv", index=False)
+
+
+
+# Color palette for clusters
+cluster_colors = ["red", "blue", "green", "purple", "orange", "brown", "gray"]
+
+# Create map
+m = folium.Map(location=[41.8781, -87.6298], zoom_start=12)
+
+for _, row in pivot.iterrows():
+    cluster = row["cluster"]
+    popup = folium.Popup(
+        f"<b>{row['station_name']}</b><br>Cluster: {cluster}<br>W:{row['Winter']} S:{row['Spring']} Su:{row['Summer']} A:{row['Autumn']}",
+        max_width=300
+    )
+    folium.CircleMarker(
+        location=[row["lat"], row["lng"]],
+        radius=5,
+        color=cluster_colors[cluster % len(cluster_colors)],
+        fill=True,
+        fill_opacity=0.8,
+        popup=popup
+    ).add_to(m)
+
+m.save("clustered_stations_map.html")
+
+
+#  get the seasonal averages per cluster:
+cluster_summary = pivot.groupby("cluster")[["Winter", "Spring", "Summer", "Autumn"]].mean().round(1)
+print(cluster_summary)
